@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi" />
+
+        <link rel="stylesheet"  href="libs/jQM-flat/jquery.mobile.flatui.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script src="filtrado.js"  ></script>
+
+        <title>Comahue Nuestra Universidad</title>
+    </head>
+    <body>
+        <div id="app">
+            <div id="home-page" data-role="page">
+                <div data-role="content" >
+                    <div id="logoContainer" class="centerText">
+                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                    </div>
+                    <div id="menu">
+
+                        <!--a data-icon="grid" data-theme="a" data-role="button" href="#unidades">Unidades académicas</a-->
+                        <a data-icon="search" data-theme="d" href="#buscar_carrera" data-role="button">Buscar Carrera</a>
+                        <!--a data-icon="flat-time" data-theme="f" href="#institucional"  data-role="button">Institucional</a-->
+
+
+                        <fieldset class="ui-grid-a">
+                            <div  class="ui-block-a"> <a data-icon="flat-checkround" data-theme="e" href="#tips-page"  data-role="button">Contacto</a></div>
+                            <div  class="ui-block-b"><a data-icon="info" data-theme="g" href="#about-page"  data-role="button" >Acerca de</a></div>
+                        </fieldset>
+
+
+
+                    </div>
+                </div>
+                <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
+                    <div id="navbar" data-role="navbar">
+                        <ul>
+                            <li><!--a id="sponsor1" onclick="navigator.app.loadUrl('http://www.ypf.com', { openExternal:true });" ><img src="img/ypf.jpeg" id="ypf" class="sponsor" /></a--></li>
+                            <li><a id="sponsor2" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
+                            <li><a id="sponsor3" href="#search-page" ></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--  unidades académicas -->
+            <div data-role="page" id="unidades">
+                <div data-role="header" id="header" data-position="fixed" class="ui-header">
+                    <a href="#home-page" data-role="button" data-icon="back" data-inline="true">Volver</a>
+                    <h1>Unidades académicas</h1>
+                </div>
+                <div data-role="content">
+                    <a data-shadow="true"  data-icon="ui-icon-unco" href="#carrerasFacultaddeInformática"  data-role="button" >
+                        Facultad de Informática
+                    </a>
+                    <a href="#FacultaddeCienciasMédicas"  data-role="button">
+                        Facultad de Ciencias Médicas
+                    </a>
+                    <a href="#tips-page"  data-role="button">
+                        Facultad de Economía y administración
+                    </a>
+                </div>
+            </div>
+            <!--Carreras facultades-->
+            <div data-role="page" id="carrerasFacultaddeInformática">
+                <div data-role="header" id="header" data-position="fixed" class="ui-header">
+                    <a href="#"  data-rel="back" data-role="button" data-icon="back" data-inline="true">Volver</a>
+                    <h1>Facultad de informática</h1>
+
+                </div>
+                <div data-role="content">                                
+                    <h2>Carreras</h2>
+                    <a data-shadow="true" data-icon="ui-icon-unco" href="#carrera"  data-role="button" >
+                        Tecnicatura Universitaria en Desarrollo Web
+                    </a>
+                    <a href="#FacultaddeCienciasMédicas"  data-role="button">
+                        Tecnicatura Universitaria en Administración de Sistemas y Software Libre
+                    </a>
+                    <a href="#"  data-role="button">
+                        Analista en computación (carrera cerrada)
+                    </a>
+                    <a href="#"  data-role="button">
+                        Licenciatura en Ciencias de la computación
+                    </a>
+
+                    <h2>Contacto</h2>
+                    <p>Buenos Aires 1400 (8300) Neuquén Capital</p>
+                    <p>Tel. +54(0299)-4490313 al 316 </p>
+                    <p>Telefax 0299 -4490312</p>
+                    <a style="color:black"  onclick="navigator.app.loadUrl('http://faiweb.uncoma.edu.ar', {openExternal: true});">http://faiweb.uncoma.edu.ar</a>
+
+                </div>
+            </div>
+            <div  id="buscar_carrera" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+                    <a href="#home-page"  data-role="button" data-icon="back" data-inline="true" >Volver</a>
+                    <h1>Buscar Carrera</h1>
+                </div>
+                <div data-role="content" >
+                    <a data-shadow="true" data-icon="ui-icon-unco" href="#buscar_carrera_nombre" data-role="button">Nombre</a>
+                    <a data-shadow="true" data-icon="ui-icon-unco" href="#buscar_carrera_filtro"  data-role="button">Búsqueda filtrada</a>
+                </div>
+            </div>
+            <div  id="buscar_carrera_nombre" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-inline="true" >Volver</a>
+                    <h1>Buscar carrera por nombre</h1>
+                </div>
+                <div data-role="content" >
+                    <form  id="search-form" action="">
+
+                        <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Ingrese carrera">
+                            <li><a href="#carrera">Tecnicatura Universitaria en Desarrollo <span style="color: grey; display:none">Web 2 años</span> </a></li>
+                            <li><a href="#">Tecnicatura Universitaria en Administración de Sistemas y Software Libre</a></li>
+                            <li><a href="#">Guía de Turismo</a></li>
+                            <li><a href="#">Técnico Universitario Forestal</a></li>
+                            <li><a href="#">Tecnicatura Universitaria de Espacios Verdes</a></li>
+                            <li><a href="#">Tecnicatura en Control e Higiene de los Alimentos</a></li>
+                            <li><a href="#">Licenciatura en Tecnología de los Alimentos</a></li>
+                            <li><a href="#">Licenciatura en Gerenciamiento Gastrónomico</a></li>
+                            <li><a href="#">Profesorado en Informática</a></li>
+                            <li><a href="#">Licenciatura en Ciencias de la Computación</a></li>
+                            <li><a href="#">Analista en Computación</a></li>
+                        </ul>
+
+                    </form>
+                </div>
+            </div>
+            <div  id="buscar_carrera_filtro" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back"  data-role="button" data-icon="back" data-inline="true" >Volver</a>
+                    <h1>Buscar carrera filtro</h1>
+                    <script type="text/javascript">
+
+                    </script>
+                </div>
+                <div data-role="content" >
+                    <div data-role="collapsible">
+                        <h3>Área</h3>
+                        <fieldset data-role="controlgroup" data-inset="true">
+                            <input type="checkbox" name="r1" id="TodasAreas" value="on" checked="checked">
+                            <label for="TodasAreas">Todas las áreas</label>
+                            <input type="checkbox" name="r1" id="Ciencias_Económicas" value="off">
+                            <label for="Ciencias_Económicas">Ciencias Económicas</label>
+                            <input type="checkbox" name="r1" id="Agronomia_Agricultura" value="off">
+                            <label for="Agronomia_Agricultura">Agronomia/Agricultura</label>
+                            <input type="checkbox" name="r1" id="Humanidades_Ciencias_Sociales" value="off">
+                            <label for="Humanidades_Ciencias_Sociales">Humanidades/Ciencias Sociales</label>
+                            <input type="checkbox" name="r1" id="Idiomas_Extranjeros" value="off">
+                            <label for="Idiomas_Extranjeros">Idiomas Extranjeros</label>
+                            <input type="checkbox" name="r1" id="Informática" value="off">
+                            <label for="Informática">Informática</label>
+                            <input type="checkbox" name="r1" id="Ciencias_Exactas_y_Naturales" value="off">
+                            <label for="Ciencias_Exactas_y_Naturales">Ciencias Exactas y Naturales</label>
+                            <input type="checkbox" name="r1" id="Pedagogía_Ciencias_de_la_Educación" value="off">
+                            <label for="Pedagogía_Ciencias_de_la_Educación">Pedagogía/Ciencias de la Educación</label>
+                            <input type="checkbox" name="r1" id="Salud" value="off">
+                            <label for="Salud">Salud</label>
+                            <input type="checkbox" name="r1" id="Ingeniería_y_Carreras_Afines" value="off">
+                            <label for="Ingeniería_y_Carreras_Afines">Ingeniería y Carreras Afines</label>
+                            <input type="checkbox" name="r1" id="Comunicación_y_Derecho" value="off">
+                            <label for="Comunicación_y_Derecho">Comunicación y Derecho</label>
+                            <input type="checkbox" name="r1" id="Turismo_Deporte_Medio_Ambiente" value="off">
+                            <label for="Turismo_Deporte_Medio_Ambiente">Turismo, Deporte, Medio Ambiente</label>
+                        </fieldset>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>Duración</h3>
+                        <fieldset data-role="controlgroup" data-inset="true">
+                            <input type="checkbox" name="r1" id="TodasDuraciones" value="on" checked="checked">
+                            <label for="TodasDuraciones">Todas las duraciones</label>
+                            <input type="checkbox" name="r1" id="dos_y_medio" value="on">
+                            <label for="dos_y_medio">2,5 años</label>
+                            <input type="checkbox" name="r1" id="tres" value="on">
+                            <label for="tres">3 años</label>
+                            <input type="checkbox" name="r1" id="tres_y_medio" value="on">
+                            <label for="tres_y_medio">3,5 años</label>
+                            <input type="checkbox" name="r1" id="cuatro" value="on">
+                            <label for="cuatro">4 años</label>
+                            <input type="checkbox" name="r1" id="cinco" value="on">
+                            <label for="cinco">5 años</label>
+                            <input type="checkbox" name="r1" id="seis" value="on">
+                            <label for="seis">6 años</label>
+                        </fieldset>
+                    </div>
+                    <a href="#"  data-role="button" data-icon="search" data-inline="true" id="filter-button">Filtrar</a>
+                </div>
+            </div>
+
+
+            <div  id="carrera" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-inline="true" >Volver</a>
+                    <h1>Tecnicatura Universitaria en Desarrollo Web</h1>
+                </div>
+                <div data-role="content">
+                    <h3>Facultad de Informática - Neuquen, Chos Malal, Viedma</h3>
+                    <h3>Duración 2.5 Años</h3>
+
+                    <h2>Descripción de la carrera</h2>
+                    <p>El egresado podrá desempeñarse en la actividad pública o privada, específicamente en el desarrollo de aplicaciones Web. Podrá participar en carácter colaborativo en proyectos de software de mayor envergadura que involucren desarrollos de sitios Web. Podrá, también, integrar equipos de proyectos y aplicaciones centradas en la Web, para su desarrollo en forma disciplinada y sistemática; 
+                        desarrollar sitios y aplicaciones Web; realizar el mantenimiento de aplicaciones y sitios Web.</p>
+
+
+                    <table>
+                        <tr><th>Plan de estudios</th></tr>
+                    </table>
+                    <table>
+                        <tr><td>1° año</td></tr>
+                    </table>
+                    <table>
+                        <tr><td>1.</td><td>Matemática general</td></tr>
+                        <tr><td>2.</td><td>Introdución a la programación</td></tr>
+                        <tr><td>3.</td><td>Inglés técnico</td></tr>
+                        <tr><td>4.</td><td>Programación estática y laboratorio web</td></tr>
+                        <tr><td>5.</td><td>Introducción a la porgramación orientada a objetos</td></tr>
+                        <tr><td>6.</td><td>Conceptos de bases de datos</td></tr>
+                    </table> 
+                    <table>
+                        <tr><td>2° año</td><tr>
+                    </table>
+                    <table>
+                        <tr><td>7.</td><td>Programación web dinámica</td></tr>
+                        <tr><td>8.</td><td>Arquitectura y seguridad de computadoras</td></tr>
+                        <tr><td>9.</td><td>Diseño gráfico</td></tr>
+                        <tr><td>10.</td><td>Programación web avanzada</td></tr>
+                        <tr><td>11.</td><td>Análisis, diseño y documentación de sistemas</td></tr>
+                    </table>
+                    <table>
+                        <tr><td>3° año</td></tr>
+                    </table>
+                    <table>
+                        <tr><td>12.</td><td>Framework e interoperabilidad</td></tr>
+                        <tr><td>13.</td><td>Trabajo final técnicatura en desarrollo web</td></tr>
+                    </table>
+
+                </div>
+            </div>
+            <div  id="institucional" data-role="page">
+                <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-inline="true" >Volver</a>
+                    <h1>Institucional</h1>
+                </div>
+                <div data-role="content"  class="big-text">
+                    <a data-shadow="true" data-icon="ui-icon-unco" href="#institucionalHistoria" data-role="button">Historia</a>
+                    <a data-shadow="true" data-icon="ui-icon-unco" href="#institucionalAutoridades" data-role="button">Autoridades</a>
+                    <a data-shadow="true" data-icon="ui-icon-unco" href="#" data-role="button">Áreas de gestión</a>
+                    <a data-shadow="true" data-icon="ui-icon-unco" href="#" data-role="button">Decanos</a>
+                    <a data-shadow="true" data-icon="ui-icon-unco" href="#" data-role="button">Consejo superior</a>
+                    <a data-shadow="true" data-icon="ui-icon-unco" href="#" data-role="button">Organizaciones</a>
+                    <a data-shadow="true" data-icon="ui-icon-unco" href="#" data-role="button">Localización de la universidad</a>
+                </div>
+            </div>
+            <div  id="institucionalHistoria" data-role="page">
+                <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-inline="true" >Volver</a>
+                    <h1>Nuestra historia</h1>
+                </div>
+                <div data-role="content"  class="big-text">
+                    <p align="left"><strong>La Universidad de Neuqu&eacute;n</strong></p>
+                    <p align="left"> En el a&ntilde;o 1965, durante el   gobierno de Felipe Sapag, la Legislatura Neuquina a trav&eacute;s de la Ley N&ordm;   414, se crea la Universidad del Neuquen.</p>
+                    <p align="left"> El prop&oacute;sito de la creaci&oacute;n   de la Universidad de Neuqu&eacute;n, fue dar una orientaci&oacute;n a las escuelas   especializadas en la rama del petr&oacute;leo, miner&iacute;a, industrial y   agropecuarios. Estos centros estar&iacute;an en los lugares m&aacute;s apropiados para   la ense&ntilde;anza. Los estudiantes ser&iacute;an asistidos de tal modo, que ning&uacute;n   problema econ&oacute;mico impidiera desarrollar su vocaci&oacute;n y actitudes.</p>
+                    <p align="left"> El objetivo era evitar la   emigraci&oacute;n de estudiantes y lograr la radicaci&oacute;n de profesores,   brind&aacute;ndoles todo para desarrollar capacidades productivas.</p>
+                    <p align="left"> El 29 de septiembre de 1964,   el poder ejecutivo neuquino elev&oacute; a la Legislatura, el proyecto de   creaci&oacute;n de la casa de altos estudios. El documento propon&iacute;a la creaci&oacute;n   en la rama de la ciencia de la educaci&oacute;n, las siguientes carreras:   Matem&aacute;tica, F&iacute;sica, Qu&iacute;mica, Historia, Geograf&iacute;a, Castellano y   Literatura, y las Ciencias Naturales. Tambi&eacute;n propon&iacute;a la creaci&oacute;n de   Antropolog&iacute;a Social, Psicolog&iacute;a, Administraci&oacute;n, Turismo, Geolog&iacute;a y   Miner&iacute;a.</p>
+                    <p align="left"> En 1965, la Municipalidad de   la ciudad de Neuqu&eacute;n, don&oacute; el terreno para la construcci&oacute;n de la ciudad   universitaria. El predio estaba formado por 107 hect&aacute;reas, a las que se   le anexaron otros terrenos, lo que totalizaron unas 120 hect&aacute;reas. Se   intensificaron los trabajos de parques y jardines que rodean a los   edificios de las distintas dependencias.</p>
+                    <p align="left"> La Universidad Nacional del Comahue</p>
+                    <p align="left"> El 15 de julio de 1971, el   poder ejecutivo nacional sancion&oacute; y promulg&oacute;, la ley 19.117; por la cu&aacute;l   se crea la Universidad Nacional del Comahue. Se cumpl&iacute;a una de las m&aacute;s   sentidas aspiraciones de la comunidad regional era la culminaci&oacute;n de un   largo proceso que transit&oacute; por diversos y laboriosos caminos.</p>
+                    <p align="left"> El 15 de marzo de 1972, comenz&oacute; el primer ciclo lectivo en el nuevo complejo educativo.</p>
+                    <p align="left"> No se trataba de poner en   marcha una casa de estudios superiores, siguiendo los lineamientos   formales de las que ya funcionaban en el pa&iacute;s, sino que se tomaba como   base la experiencia de la Universidad Provincial de Neuquen y los   Institutos de R&iacute;o Negro, que ya hab&iacute;an formado varias promociones de   egresados.</p>
+                    <p align="left"> La historia de la   Universidad no ha sido f&aacute;cil ni ajena a los tiempos que le toc&oacute; vivir a   nuestra Argentina. Su crecimiento est&aacute; &iacute;ntimamente vinculado con el   desarrollo de las provincias a las cuales b&aacute;sicamente sirve.</p>
+                    <p align="left"> La Universidad est&aacute;   f&iacute;sicamente asentada en dos territorios con historias equivalentes,   configurados en una sola unidad humana, social y cultural. </p>
+                </div>
+            </div>
+
+
+
+            <div  id="about-page" data-role="page">
+                <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-inline="true" >Volver</a>
+                    <h1>Acerca de</h1>
+                </div>
+                <div data-role="content"  class="big-text">
+                    <b>Así es la UNCo</b> ha sido desarrollado por personas de la facultad de informática con el apoyo de la FUNYDER (Fundación de la universidad nacional del comahue para el desarrollo regional) con el fin de ofrecerle a la sociedad una guía práctica y completa sobre la Universidad Nacional del Comahue.
+                    <p>Toda la información ha sido generada por profesionales, docentes y autoridades pertenecientes a la facultad.</p>
+                    <p>Los desarrolladores son......</p>
+                    <p>Los fuentes se pueden encontrar en.....</p>
+
+                    <div><img src="img/uncgrande.png"/><img src="img/logofai.jpg"/></div>
+                    <div><img src="img/funyder.png"/></div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="libs/fastclick.min.js"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="libs/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="libs/jQueryMobile/jquery.mobile-1.3.2.min.js"></script>
+
+
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <script type="text/javascript">
+                        app.initialize();
+        </script>
+    </body>
+</html>
