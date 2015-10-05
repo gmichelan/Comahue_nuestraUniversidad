@@ -5,30 +5,32 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi" />
 
-        <link rel="stylesheet"  href="libs/jQM-flat/jquery.mobile.flatui.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <script src="filtrado.js"  ></script>
-
+        <link rel="stylesheet" type="text/css" href="css/index2.css" />
+        <link rel="stylesheet"  href="libs/jQueryMobile/jquery.mobile-1.4.3.min.css">
+        
+<!--        <link rel="stylesheet"  href="libs/jQM-flat/jquery.mobile.flatui.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        
         <title>Comahue Nuestra Universidad</title>
     </head>
-    <body>
+    <body >
         <div id="app">
-            <div id="home-page" data-role="page">
+            <div id="home-page"  data-role="page">
                 <div data-role="content" >
                     <div id="logoContainer" class="centerText">
                         <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
                     </div>
-                    <div id="menu">
-
+                    <div id="menu" style="padding-top: 80px">
+                         
                         <!--a data-icon="grid" data-theme="a" data-role="button" href="#unidades">Unidades académicas</a-->
-                        <a data-icon="search" data-theme="d" href="#buscar_carrera_nombre" data-role="button">Buscar Carrera</a>
+                        <div style="padding-bottom: 10px"><a data-role="button" id="ui-btn-d" class="ui-btn  ui-corner-all" data-icon="info" href="#buscar_carrera_nombre" >Buscar Carrera</a></div>
                         <!--a data-icon="flat-time" data-theme="f" href="#institucional"  data-role="button">Institucional</a-->
 
 
-                        <fieldset class="ui-grid-a">
-                            <div  class="ui-block-a"> <a data-icon="flat-checkround" data-theme="e" href="#tips-page"  data-role="button">Contacto</a></div>
-                            <div  class="ui-block-b"><a data-icon="info" data-theme="g" href="#about-page"  data-role="button" >Acerca de</a></div>
-                        </fieldset>
+
+                        <div style="padding-bottom: 10px"><a id="ui-btn-c" href="#tips-page"  data-role="button">Contacto</a></div>
+                        <a id="ui-btn-e" href="#about-page"  data-role="button" >Acerca de</a>
+
 
 
 
@@ -38,16 +40,35 @@
                     <div id="navbar" data-role="navbar">
                         <ul>
                             <li><!--a id="sponsor1" onclick="navigator.app.loadUrl('http://www.ypf.com', { openExternal:true });" ><img src="img/ypf.jpeg" id="ypf" class="sponsor" /></a--></li>
-                            <li><a id="sponsor2" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
-                            <li><a id="sponsor3" href="#search-page" ></a></li>
+                            <li><a id="sponsor2" class="blue" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
+                            <li><a id="sponsor3" class="blue" href="#search-page" ></a></li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <div  id="about-page" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext"></a>
+                    
+                    <div id="logoContainer" class="centerText">
+                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                    </div>                     
+                </div>
+                <div data-role="content">
+                    <h3>Datos de ubicación y contacto </h3>
+                    <p>Buenos Aires 1400</p>
+                    <p>Código postal: Q8300IBX</p>
+                    <p>Neuquén Capital </p>
+                    <p>Patagonia Argentina </p>
+                    <p>Tel: 54-299-4490300</p>
+                    <a onclick="navigator.app.loadUrl('http://www.uncoma.edu.ar', {openExternal: true});">www.uncoma.edu.ar</a>
+                    
                 </div>
             </div>
             <!--  unidades académicas -->
             <div data-role="page" id="unidades">
                 <div data-role="header" id="header" data-position="fixed" class="ui-header">
-                    <a href="#home-page" data-role="button" data-icon="back" data-inline="true">Volver</a>
+                    <a href="#home-page" data-role="button" data-icon="back" data-inline="true"></a>
                     <h1>Unidades académicas</h1>
                 </div>
                 <div data-role="content">
@@ -65,7 +86,7 @@
             <!--Carreras facultades-->
             <div data-role="page" id="carrerasFacultaddeInformática">
                 <div data-role="header" id="header" data-position="fixed" class="ui-header">
-                    <a href="#"  data-rel="back" data-role="button" data-icon="back" data-inline="true">Volver</a>
+                    <a href="#"  data-rel="back" data-role="button" data-icon="back" data-inline="true"></a>
                     <h1>Facultad de informática</h1>
 
                 </div>
@@ -94,7 +115,7 @@
             </div>
             <div  id="buscar_carrera" data-role="page">
                 <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
-                    <a href="#home-page"  data-role="button" data-icon="back" data-inline="true" >Volver</a>
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" ></a>
                     <h1>Buscar Carrera</h1>
                 </div>
                 <div data-role="content" >
@@ -102,127 +123,148 @@
                     <a data-shadow="true" data-icon="ui-icon-unco" href="#buscar_carrera_filtro"  data-role="button">Búsqueda filtrada</a>
                 </div>
             </div>
-            <div  id="buscar_carrera_nombre" data-role="page">
+            <!--La busqueda antigua la dejo en el index por las dudas-->
+<!--            <div  id="buscar_carrera_nombre" data-role="page">
                 <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back" data-role="button" data-icon="back" data-inline="true" >Volver</a>
                     <h1>Buscar carrera por nombre</h1>
                 </div>
                 <div data-role="content" >
-                    <form  id="search-form" action="">
-
-                        <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Ingrese carrera">
-                            <li><a href="planes/ca237.html">Tecnicatura Superior En  Programación Y Bases De Datos</a></li>
-<li><a href="planes/ca239.html">Tecnicatura Universitaria En Desarrollo Web</a></li>
-<li><a href="planes/ca240.html">Contador Público Nacional</a></li>
-<li><a href="planes/ca241.html">Profesorado En Matemáticas</a></li>
-<li><a href="planes/ca242.html">Ingeniería Eléctrica</a></li>
-<li><a href="planes/ca243.html">Ingeniería Electrónica</a></li>
-<li><a href="planes/ca244.html">Ingeniería Mecánica</a></li>
-<li><a href="planes/ca245.html">Ingeniería Civil</a></li>
-<li><a href="planes/ca246.html">Ingeniería Química</a></li>
-<li><a href="planes/ca247.html">Ingeniería En Petróleo</a></li>
-<li><a href="planes/ca248.html">Licenciatura En Ciencias Geológicas</a></li>
-<li><a href="planes/ca249.html">Profesorado En Física</a></li>
-<li><a href="planes/ca250.html">Profesorado En Química</a></li>
-<li><a href="planes/ca251.html">Licenciatura En Enfermeria</a></li>
-<li><a href="planes/ca252.html">Profesorado En Nivel Inicial</a></li>
-<li><a href="planes/ca253.html">Profesorado En Enseñanza Primaria</a></li>
-<li><a href="planes/ca254.html">Licenciatura En Ciencias De La Educacion</a></li>
-<li><a href="planes/ca255.html">Licenciatura En Ciencias De La Educacion</a></li>
-<li><a href="planes/ca256.html">Profesorado En Ciencias De La Educacion</a></li>
-<li><a href="planes/ca257.html">Profesorado En Ciencias De La Educacion</a></li>
-<li><a href="planes/ca258.html">Psicologia</a></li>
-<li><a href="planes/ca259.html">Psicologia</a></li>
-<li><a href="planes/ca260.html">Profesorado En Matematicas</a></li>
-<li><a href="planes/ca262.html">Profesorado En Comunicacion Social</a></li>
-<li><a href="planes/ca263.html">Servicio Social Modulo Roca</a></li>
-<li><a href="planes/ca264.html">Servicio Social Modulo Neuquen</a></li>
-<li><a href="planes/ca265.html">Licenciatura En Sociologia</a></li>
-<li><a href="planes/ca267.html">Profesorado En Ciencias Economicas</a></li>
-<li><a href="planes/ca268.html">Profesorado En Filosofia</a></li>
-<li><a href="planes/ca269.html">Profesorado En Geografia</a></li>
-<li><a href="planes/ca270.html">Profesorado En Historia</a></li>
-<li><a href="planes/ca271.html">Profesorado En Letras</a></li>
-<li><a href="planes/ca273.html">Profesorado En Fisica</a></li>
-<li><a href="planes/ca274.html">Profesorado En Quimica</a></li>
-<li><a href="planes/ca275.html">Licenciatura En Matemáticas</a></li>
-<li><a href="planes/ca276.html">Licenciatura En Enfermeria</a></li>
-<li><a href="planes/ca280.html">Tecnicatura En Gestion Del Desarrollo Turistico Local</a></li>
-<li><a href="planes/ca281.html">Maestria En Marketing De Servicios</a></li>
-<li><a href="planes/ca283.html">Profesorado Universitario En Matemática</a></li>
-<li><a href="planes/ca284.html">Tecnicatura Superior En Gestion De Recursos Universitarios</a></li>
-<li><a href="planes/ca285.html">Licenciatura En Sistemas De Información</a></li>
-<li><a href="planes/ca286.html">Licenciatura En Administracion Publica</a></li>
-<li><a href="planes/ca287.html">Licenciatura En Ciencia Politica</a></li>
-<li><a href="planes/ca288.html">Licenciatura En Enfermeria</a></li>
-<li><a href="planes/ca289.html">Licenciatura En Enfermeria</a></li>
-<li><a href="planes/ca290.html">Licenciatura En Gestion De Empresas Agropecuarias</a></li>
-<li><a href="planes/ca291.html">Profesorado En Lengua Y Comunicacion Oral Y Escrita</a></li>
-<li><a href="planes/ca292.html">Licenciatura En Psicopedagogia</a></li>
-<li><a href="planes/ca293.html">Profesorado En Psicopedagogia</a></li>
-<li><a href="planes/ca295.html">Profesorado En Ciencias Agropecuarias</a></li>
-<li><a href="planes/ca296.html">Tecnicatura Universitaria En Administracion Publica</a></li>
-<li><a href="planes/ca297.html">Profesorado En Matemática</a></li>
-<li><a href="planes/ca298.html">Profesorado En Ciencias Económicas</a></li>
-<li><a href="planes/ca299.html">Profesorado Universitario En Matemática</a></li>
-<li><a href="planes/ca300.html">Licenciatura En Matemática</a></li>
-<li><a href="planes/ca301.html">Contador Público Nacional</a></li>
-<li><a href="planes/ca302.html">Licenciatura En Administración</a></li>
-<li><a href="planes/ca303.html">Ciclo General En Ciencias Económicas</a></li>
-<li><a href="planes/ca304.html">Profesorado En Ciencias Economicas</a></li>
-<li><a href="planes/ca306.html">Contador Público  Nacional</a></li>
-<li><a href="planes/ca307.html">Psicologia</a></li>
-<li><a href="planes/ca389.html">Plan 2</a></li>
-<li><a href="planes/ca391.html">Licenciatura En Tecnología Minera</a></li>
-<li><a href="planes/ca393.html">Técnico Universitario Forestal</a></li>
-<li><a href="planes/ca396.html">Guía Universitario De Turismo</a></li>
-<li><a href="planes/ca235.html">Profesorado En Informática</a></li>
-<li><a href="planes/ca233.html">Licenciatura En Ciencias De La Computación</a></li>
-<li><a href="planes/ca236.html">Tecnicatura Universitaria En Aplicaciones Web</a></li>
-<li><a href="planes/ca403.html">Medicina</a></li>
-<li><a href="planes/ca388.html">Plan 12</a></li>
-<li><a href="planes/ca390.html">Tecnicatura En Plantas Y Análisis De Menas</a></li>
-<li><a href="planes/ca392.html">Tecnicatura Universitaria En Topografía</a></li>
-<li><a href="planes/ca409.html">Ingeniería Quimica</a></li>
-<li><a href="planes/ca410.html">Licenciatura En Enfermería</a></li>
-<li><a href="planes/ca411.html">Licenciatura En Historia</a></li>
-<li><a href="planes/ca412.html">Profesorado En Historia</a></li>
-<li><a href="planes/ca405.html">Ingeniería Civil</a></li>
-<li><a href="planes/ca272.html">Licenciatura En Turismo</a></li>
-<li><a href="planes/ca266.html">Profesorado En Ingles</a></li>
-<li><a href="planes/ca279.html">Guía Universitario En Turismo</a></li>
-<li><a href="planes/ca394.html">Tecnicatura Universitaria En Espacios Verdes</a></li>
-<li><a href="planes/ca278.html">Tecnicatura En Empresas De Servicios Turísticos</a></li>
-<li><a href="planes/ca406.html">Ingeniería Eléctrica</a></li>
-<li><a href="planes/ca407.html">Ingeniería Electrónica</a></li>
-<li><a href="planes/ca408.html">Ingeniería En Petróleo</a></li>
-<li><a href="planes/ca238.html">Tecnicatura Universitaria En Administración De Sistemas Y Software Libre</a></li>
-<li><a href="planes/ca397.html">Profesorado En Ciencias Biológicas</a></li>
-<li><a href="planes/ca398.html">Licenciatura En Ciencias Biológicas</a></li>
-<li><a href="planes/ca399.html">Técnico Universitario En Acuicultura</a></li>
-<li><a href="planes/ca400.html">Profesorado En Educación Física</a></li>
-<li><a href="planes/ca401.html">Profesorado Universitario En Matemática</a></li>
-<li><a href="planes/ca402.html">Licenciatura En Matemática</a></li>
-<li><a href="planes/ca404.html">Licenciatura En Biología Marina</a></li>
-<li><a href="planes/ca415.html">Profesorado En Lengua Y Comunicación Oral Y Escrita</a></li>
-<li><a href="planes/ca416.html">Tecnicatura En Control E Higiene De Los Alimentos</a></li>
-<li><a href="planes/ca414.html">Técnico En Producción Pesquera Y Maricultura</a></li>
-<li><a href="planes/ca417.html">Traductorado Público En Idioma Inglés</a></li>
-<li><a href="planes/ca413.html">Ingeniería Mecánica</a></li>
-<li><a href="planes/ca420.html">Ingenieria Agronomica</a></li>
-<li><a href="planes/ca418.html">Licenciatura En Filosofía</a></li>
-<li><a href="planes/ca419.html">Licenciatura En Geografía</a></li>
-<li><a href="planes/ca421.html">Licenciatura En Historia</a></li>
-<li><a href="planes/ca422.html">Licenciatura En Letras</a></li>
-<li><a href="planes/ca282.html">Licenciatura En Gerenciamiento Gastronomico</a></li>
-                        </ul>
-
+                    <form>
+                        <input data-type="search" id="divOfPs-input">
                     </form>
+
+                    <div class="elements" data-filter="true" data-input="#divOfPs-input">
+                        //                    </div>
+
+                    
+                </div>
+            </div>-->
+            <div  id="buscar_carrera_nombre" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext"></a>
+                    
+                    <div id="logoContainer" class="centerText">
+                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                    </div>                     
+                </div>
+                <div data-role="content">
+                <form>
+                <input data-type="search" id="divOfPs-input" data-filter-placeholder="Nombre, Area, Ubicación, Duración" >
+                </form>
+                <div class="elements" data-filter="true" data-input="#divOfPs-input">
+                   <p><a href="planes/ca237.html">Tecnicatura superior en  programación y bases de datos - 0 años</a></p>
+<hr/><p><a href="planes/ca239.html">Tecnicatura universitaria en desarrollo web - Informática, 0 años</a></p>
+<hr/><p><a href="planes/ca240.html">Contador público nacional - Ciencias Económicas, 0 años</a></p>
+<hr/><p><a href="planes/ca241.html">Profesorado en matemáticas - 0 años</a></p>
+<hr/><p><a href="planes/ca242.html">Ingeniería eléctrica - Ingeniería y Carreras Afines, 0 años</a></p>
+<hr/><p><a href="planes/ca243.html">Ingeniería electrónica - Ingeniería y Carreras Afines, 0 años</a></p>
+<hr/><p><a href="planes/ca244.html">Ingeniería mecánica - Ingeniería y Carreras Afines, 0 años</a></p>
+<hr/><p><a href="planes/ca245.html">Ingeniería civil - Ingeniería y Carreras Afines, 0 años</a></p>
+<hr/><p><a href="planes/ca246.html">Ingeniería química - Ingeniería y Carreras Afines, 0 años</a></p>
+<hr/><p><a href="planes/ca247.html">Ingeniería en petróleo - Ingeniería y Carreras Afines, 0 años</a></p>
+<hr/><p><a href="planes/ca248.html">Licenciatura en ciencias geológicas - 0 años</a></p>
+<hr/><p><a href="planes/ca249.html">Profesorado en física - 0 años</a></p>
+<hr/><p><a href="planes/ca250.html">Profesorado en química - Ingeniería y Carreras Afines, 0 años</a></p>
+<hr/><p><a href="planes/ca251.html">Licenciatura en enfermeria - Salud, 0 años</a></p>
+<hr/><p><a href="planes/ca252.html">Profesorado en nivel inicial - Pedagogía/Ciencias de la Educación, 0 años</a></p>
+<hr/><p><a href="planes/ca253.html">Profesorado en enseñanza primaria - Pedagogía/Ciencias de la Educación, 0 años</a></p>
+<hr/><p><a href="planes/ca254.html">Licenciatura en ciencias de la educacion - Pedagogía/Ciencias de la Educación, 0 años</a></p>
+<hr/><p><a href="planes/ca255.html">Licenciatura en ciencias de la educacion - 0 años</a></p>
+<hr/><p><a href="planes/ca256.html">Profesorado en ciencias de la educacion - Pedagogía/Ciencias de la Educación, 0 años</a></p>
+<hr/><p><a href="planes/ca257.html">Profesorado en ciencias de la educacion - 0 años</a></p>
+<hr/><p><a href="planes/ca258.html">Psicologia - Salud, 0 años</a></p>
+<hr/><p><a href="planes/ca259.html">Psicologia - Salud, 0 años</a></p>
+<hr/><p><a href="planes/ca260.html">Profesorado en matematicas - 0 años</a></p>
+<hr/><p><a href="planes/ca262.html">Profesorado en comunicacion social - Comunicación y Derecho, 0 años</a></p>
+<hr/><p><a href="planes/ca263.html">Servicio social modulo roca - 0 años</a></p>
+<hr/><p><a href="planes/ca264.html">Servicio social modulo neuquen - 0 años</a></p>
+<hr/><p><a href="planes/ca265.html">Licenciatura en sociologia - Humanidades/Ciencias Sociales, 0 años</a></p>
+<hr/><p><a href="planes/ca267.html">Profesorado en ciencias economicas - 0 años</a></p>
+<hr/><p><a href="planes/ca268.html">Profesorado en filosofia - Humanidades/Ciencias Sociales, 0 años</a></p>
+<hr/><p><a href="planes/ca269.html">Profesorado en geografia - Humanidades/Ciencias Sociales, 0 años</a></p>
+<hr/><p><a href="planes/ca270.html">Profesorado en historia - Humanidades/Ciencias Sociales, 0 años</a></p>
+<hr/><p><a href="planes/ca271.html">Profesorado en letras - Humanidades/Ciencias Sociales, 0 años</a></p>
+<hr/><p><a href="planes/ca273.html">Profesorado en fisica - Ingeniería y Carreras Afines, 0 años</a></p>
+<hr/><p><a href="planes/ca274.html">Profesorado en quimica - Ingeniería y Carreras Afines, 0 años</a></p>
+<hr/><p><a href="planes/ca275.html">Licenciatura en matemáticas - 0 años</a></p>
+<hr/><p><a href="planes/ca276.html">Licenciatura en enfermeria - Salud, 0 años</a></p>
+<hr/><p><a href="planes/ca280.html">Tecnicatura en gestion del desarrollo turistico local - 0 años</a></p>
+<hr/><p><a href="planes/ca281.html">Maestria en marketing de servicios - 0 años</a></p>
+<hr/><p><a href="planes/ca283.html">Profesorado universitario en matemática - 0 años</a></p>
+<hr/><p><a href="planes/ca284.html">Tecnicatura superior en gestion de recursos universitarios - 0 años</a></p>
+<hr/><p><a href="planes/ca285.html">Licenciatura en sistemas de información - 0 años</a></p>
+<hr/><p><a href="planes/ca286.html">Licenciatura en administracion publica - Ciencias Económicas, 0 años</a></p>
+<hr/><p><a href="planes/ca287.html">Licenciatura en ciencia politica - 0 años</a></p>
+<hr/><p><a href="planes/ca288.html">Licenciatura en enfermeria - Salud, 0 años</a></p>
+<hr/><p><a href="planes/ca289.html">Licenciatura en enfermeria - Salud, 0 años</a></p>
+<hr/><p><a href="planes/ca290.html">Licenciatura en gestion de empresas agropecuarias - Agronomia/Agricultura, 0 años</a></p>
+<hr/><p><a href="planes/ca291.html">Profesorado en lengua y comunicacion oral y escrita - 0 años</a></p>
+<hr/><p><a href="planes/ca292.html">Licenciatura en psicopedagogia - Pedagogía/Ciencias de la Educación, 0 años</a></p>
+<hr/><p><a href="planes/ca293.html">Profesorado en psicopedagogia - Pedagogía/Ciencias de la Educación, 0 años</a></p>
+<hr/><p><a href="planes/ca295.html">Profesorado en ciencias agropecuarias - Agronomia/Agricultura, 0 años</a></p>
+<hr/><p><a href="planes/ca296.html">Tecnicatura universitaria en administracion publica - Ciencias Económicas, 0 años</a></p>
+<hr/><p><a href="planes/ca297.html">Profesorado en matemática - 0 años</a></p>
+<hr/><p><a href="planes/ca298.html">Profesorado en ciencias económicas - 0 años</a></p>
+<hr/><p><a href="planes/ca299.html">Profesorado universitario en matemática - 0 años</a></p>
+<hr/><p><a href="planes/ca300.html">Licenciatura en matemática - 0 años</a></p>
+<hr/><p><a href="planes/ca301.html">Contador público nacional - Neuquén Capital, 0 años</a></p>
+<hr/><p><a href="planes/ca302.html">Licenciatura en administración - Ciencias Económicas, 0 años</a></p>
+<hr/><p><a href="planes/ca303.html">Ciclo general en ciencias económicas - 0 años</a></p>
+<hr/><p><a href="planes/ca304.html">Profesorado en ciencias economicas - 0 años</a></p>
+<hr/><p><a href="planes/ca306.html">Contador público  nacional - 0 años</a></p>
+<hr/><p><a href="planes/ca307.html">Psicologia - Salud, 0 años</a></p>
+<hr/><p><a href="planes/ca389.html">Plan 2 - 0 años</a></p>
+<hr/><p><a href="planes/ca391.html">Licenciatura en tecnología minera - Zapala, 5 años</a></p>
+<hr/><p><a href="planes/ca393.html">Técnico universitario forestal - San Martín de los Andes, 3 años</a></p>
+<hr/><p><a href="planes/ca396.html">Guía universitario de turismo - Turismo, Deporte, Medio Ambiente, San Martín de los Andes, 2.5 años</a></p>
+<hr/><p><a href="planes/ca235.html">Profesorado en informática - Informática, Neuquén Capital, 4 años</a></p>
+<hr/><p><a href="planes/ca233.html">Licenciatura en ciencias de la computación - Informática, Neuquén Capital, 5 años</a></p>
+<hr/><p><a href="planes/ca236.html">Tecnicatura universitaria en aplicaciones web - Neuquén Capital, 2.5 años</a></p>
+<hr/><p><a href="planes/ca403.html">Medicina - Salud, Cipolletti, 7 años</a></p>
+<hr/><p><a href="planes/ca388.html">Plan 12 - Idiomas Extranjeros, San Martín de los Andes, 0 años</a></p>
+<hr/><p><a href="planes/ca390.html">Tecnicatura en plantas y análisis de menas - Zapala, 3 años</a></p>
+<hr/><p><a href="planes/ca392.html">Tecnicatura universitaria en topografía - Zapala, 3 años</a></p>
+<hr/><p><a href="planes/ca409.html">Ingeniería quimica - San Carlos de Bariloche, 0 años</a></p>
+<hr/><p><a href="planes/ca410.html">Licenciatura en enfermería - San Carlos de Bariloche, 0 años</a></p>
+<hr/><p><a href="planes/ca411.html">Licenciatura en historia - San Carlos de Bariloche, 0 años</a></p>
+<hr/><p><a href="planes/ca412.html">Profesorado en historia - San Carlos de Bariloche, 0 años</a></p>
+<hr/><p><a href="planes/ca405.html">Ingeniería civil - San Carlos de Bariloche, 5 años</a></p>
+<hr/><p><a href="planes/ca272.html">Licenciatura en turismo - Neuquén Capital, 5 años</a></p>
+<hr/><p><a href="planes/ca266.html">Profesorado en ingles - Idiomas Extranjeros, General Roca, 5 años</a></p>
+<hr/><p><a href="planes/ca279.html">Guía universitario en turismo - Turismo, Deporte, Medio Ambiente, Neuquén Capital, 0 años</a></p>
+<hr/><p><a href="planes/ca394.html">Tecnicatura universitaria en espacios verdes - San Martín de los Andes, 3 años</a></p>
+<hr/><p><a href="planes/ca278.html">Tecnicatura en empresas de servicios turísticos - Turismo, Deporte, Medio Ambiente, Neuquén Capital, 0 años</a></p>
+<hr/><p><a href="planes/ca406.html">Ingeniería eléctrica - Ingeniería y Carreras Afines, San Carlos de Bariloche, 5 años</a></p>
+<hr/><p><a href="planes/ca407.html">Ingeniería electrónica - Ingeniería y Carreras Afines, San Carlos de Bariloche, 5 años</a></p>
+<hr/><p><a href="planes/ca408.html">Ingeniería en petróleo - Ingeniería y Carreras Afines, San Carlos de Bariloche, 5 años</a></p>
+<hr/><p><a href="planes/ca238.html">Tecnicatura universitaria en administración de sistemas y software libre - Informática, Neuquén Capital, 2.5 años</a></p>
+<hr/><p><a href="planes/ca397.html">Profesorado en ciencias biológicas - Ciencias Exactas y Naturales, San Carlos de Bariloche, 4 años</a></p>
+<hr/><p><a href="planes/ca398.html">Licenciatura en ciencias biológicas - Ciencias Exactas y Naturales, San Carlos de Bariloche, 5 años</a></p>
+<hr/><p><a href="planes/ca399.html">Técnico universitario en acuicultura - Ciencias Exactas y Naturales, San Carlos de Bariloche, 3 años</a></p>
+<hr/><p><a href="planes/ca400.html">Profesorado en educación física - Turismo, Deporte, Medio Ambiente, San Carlos de Bariloche, 4 años</a></p>
+<hr/><p><a href="planes/ca401.html">Profesorado universitario en matemática - San Carlos de Bariloche, 4 años</a></p>
+<hr/><p><a href="planes/ca402.html">Licenciatura en matemática - San Carlos de Bariloche, 4 años</a></p>
+<hr/><p><a href="planes/ca404.html">Licenciatura en biología marina - San Antonio Oeste, 5 años</a></p>
+<hr/><p><a href="planes/ca415.html">Profesorado en lengua y comunicación oral y escrita - San Antonio Oeste, 0 años</a></p>
+<hr/><p><a href="planes/ca416.html">Tecnicatura en control e higiene de los alimentos - San Antonio Oeste, 0 años</a></p>
+<hr/><p><a href="planes/ca414.html">Técnico en producción pesquera y maricultura - San Antonio Oeste, 2.5 años</a></p>
+<hr/><p><a href="planes/ca417.html">Traductorado público en idioma inglés - Idiomas Extranjeros, General Roca, 5 años</a></p>
+<hr/><p><a href="planes/ca413.html">Ingeniería mecánica - San Carlos de Bariloche, 5 años</a></p>
+<hr/><p><a href="planes/ca420.html">Ingenieria agronomica - 0 años</a></p>
+<hr/><p><a href="planes/ca418.html">Licenciatura en filosofía - 0 años</a></p>
+<hr/><p><a href="planes/ca419.html">Licenciatura en geografía - 0 años</a></p>
+<hr/><p><a href="planes/ca421.html">Licenciatura en historia - 0 años</a></p>
+<hr/><p><a href="planes/ca422.html">Licenciatura en letras - 0 años</a></p>
+<hr/><p><a href="planes/ca282.html">Licenciatura en gerenciamiento gastronomico - 0 años</a></p>
+<hr/>                </div>
+
+                    
                 </div>
             </div>
             <div  id="buscar_carrera_filtro" data-role="page">
                 <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
-                    <a href="#" data-rel="back"  data-role="button" data-icon="back" data-inline="true" >Volver</a>
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" ></a>
                     <h1>Buscar carrera filtro</h1>
                     <script type="text/javascript">
 
@@ -280,11 +322,11 @@
                     <a href="#"  data-role="button" data-icon="search" data-inline="true" id="filter-button">Filtrar</a>
                 </div>
             </div>
+            
 
-           
             <div  id="institucional" data-role="page">
                 <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
-                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-inline="true" >Volver</a>
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" ></a>
                     <h1>Institucional</h1>
                 </div>
                 <div data-role="content"  class="big-text">
@@ -322,7 +364,7 @@
 
             <div  id="about-page" data-role="page">
                 <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
-                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-inline="true" >Volver</a>
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext">Volver</a>
                     <h1>Acerca de</h1>
                 </div>
                 <div data-role="content"  class="big-text">
@@ -341,8 +383,8 @@
         <script type="text/javascript" src="libs/fastclick.min.js"></script>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="libs/jquery-2.0.3.min.js"></script>
-        <script type="text/javascript" src="libs/jQueryMobile/jquery.mobile-1.3.2.min.js"></script>
-
+<!--        <script type="text/javascript" src="libs/jQueryMobile/jquery.mobile-1.3.2.min.js"></script>-->
+         <script type="text/javascript" src="libs/jQueryMobile/jquery.mobile-1.4.3.min.js"></script>
 
         <script type="text/javascript" src="js/index.js"></script>
 

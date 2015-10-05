@@ -2,11 +2,66 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-  
-body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+.centerText{
+    text-align:center;
+}
+#logo{
+    width:70%;
+    max-width:206px;
+
+}
+
+#home-page{
+    background:url("../img/BackgroundComahueNuestraUniversidad.png") no-repeat center center fixed;
+      -webkit-background-size: cover;          
+      -moz-background-size: cover;         
+       -o-background-size: cover;          
+       background-size: cover;
+}
+
+.blue{
+    background-color: #0B0B61 !important;
+    border-color: #0B0B61 !important;
+}
+#sponsor{
+    width:70%;
+    max-width:206px;
+    
+
+}
+#ui-btn-d{
+    border: 1px solid #C1392B;
+    background: none repeat scroll 0% 0% #C1392B;
+    font-weight: bold;
+    color: #FFFFFF;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#ui-btn-c{
+    border: 1px solid #DBA901;
+    background: none repeat scroll 0% 0% #DBA901;
+    font-weight: bold;
+    color: #FFFFFF;
+    height: 50px;
+}
+
+#ui-btn-e{
+    border: 1px solid #0B610B;
+    background: none repeat scroll 0% 0% #0B610B;
+    font-weight: bold;
+    color: #FFFFFF;
+    height: 50px;
+   
+}
+#footer{
+    background-color:#0B0B61 ;
+}
+/*body {
+    -webkit-touch-callout: none;                 prevent callout to copy image, etc when tap to hold 
+    -webkit-text-size-adjust: none;              prevent webkit from resizing text to fit 
+    -webkit-user-select: none;                   prevent copy paste, to allow, change 'none' to 'text' 
     background-color:#FFFFFF;
     background-image:linear-gradient(top, #CCC 0%, #FFFFFF 51%);
     background-image:-webkit-linear-gradient(top, #CCC 0%, #FFFFFF 51%);
@@ -36,12 +91,12 @@ h1 {
     text-align:center;
 }
 
-/* header */
+ header 
 .ui-header > .ui-btn {
     padding: 7px 10px 11px;
     background:none;
     border:none;
-    /*overflow:;*/
+    overflow:;
 }
 .ui-header .ui-title{
 
@@ -49,7 +104,7 @@ margin: .8em 30% .8em;
 
 }
 
-/* home page */
+ home page 
 
 #logo{
     width:70%;
@@ -81,7 +136,7 @@ margin: .8em 30% .8em;
     //word-break: break-word;
 }
 
-/* map */
+ map 
 #second-page{
    
 }
@@ -98,10 +153,10 @@ margin: .8em 30% .8em;
 }
 
 .ui-btn-active {
-    border: 1px solid       #1abc9c /*{global-active-border}*/;
-    background:             #1abc9c /*{global-active-background-color}*/;
+    border: 1px solid       #1abc9c {global-active-border};
+    background:             #1abc9c {global-active-background-color};
     font-weight: bold;
-    color:                  #ffffff /*{global-active-color}*/;
+    color:                  #ffffff {global-active-color};
     cursor: pointer;
     text-decoration: none;
   font-family: Lato, sans-serif
@@ -131,4 +186,4 @@ margin: .8em 30% .8em;
       -moz-background-size: cover;         
        -o-background-size: cover;          
        background-size: cover;
- } 
+ } */
