@@ -10,6 +10,9 @@
     max-width:206px;
 
 }
+#menu{
+  padding-top: 20px;    
+}
 
 #home-page{
     background:url("../img/BackgroundComahueNuestraUniversidad.png") no-repeat center center fixed;
@@ -23,7 +26,7 @@
     background-color: #0B0B61 !important;
     border-color: #0B0B61 !important;
 }
-#sponsor{
+.sponsor{
     width:70%;
     max-width:206px;
     
@@ -34,7 +37,7 @@
     background: none repeat scroll 0% 0% #C1392B;
     font-weight: bold;
     color: #FFFFFF;
-    height: 50px;
+    /*height: 40px;*/
     text-align: center;
     vertical-align: middle;
 }
@@ -44,7 +47,7 @@
     background: none repeat scroll 0% 0% #DBA901;
     font-weight: bold;
     color: #FFFFFF;
-    height: 50px;
+/*    height: 40px;*/
 }
 
 #ui-btn-e{
@@ -52,7 +55,7 @@
     background: none repeat scroll 0% 0% #0B610B;
     font-weight: bold;
     color: #FFFFFF;
-    height: 50px;
+    /*height: 40px;*/
    
 }
 #footer{
