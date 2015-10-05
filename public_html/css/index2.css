@@ -13,6 +13,9 @@
 #menu{
   padding-top: 20px;    
 }
+h1{
+    text-align: center;
+}
 
 #home-page{
     background:url("../img/BackgroundComahueNuestraUniversidad.png") no-repeat center center fixed;
