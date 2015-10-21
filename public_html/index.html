@@ -65,54 +65,6 @@
                     
                 </div>
             </div>
-            <!--  unidades académicas -->
-            <div data-role="page" id="unidades">
-                <div data-role="header" id="header" data-position="fixed" class="ui-header">
-                    <a href="#home-page" data-role="button" data-icon="back" data-inline="true"></a>
-                    <h1>Unidades académicas</h1>
-                </div>
-                <div data-role="content">
-                    <a data-shadow="true"  data-icon="ui-icon-unco" href="#carrerasFacultaddeInformática"  data-role="button" >
-                        Facultad de Informática
-                    </a>
-                    <a href="#FacultaddeCienciasMédicas"  data-role="button">
-                        Facultad de Ciencias Médicas
-                    </a>
-                    <a href="#tips-page"  data-role="button">
-                        Facultad de Economía y administración
-                    </a>
-                </div>
-            </div>
-            <!--Carreras facultades-->
-            <div data-role="page" id="carrerasFacultaddeInformática">
-                <div data-role="header" id="header" data-position="fixed" class="ui-header">
-                    <a href="#"  data-rel="back" data-role="button" data-icon="back" data-inline="true"></a>
-                    <h1>Facultad de informática</h1>
-
-                </div>
-                <div data-role="content">                                
-                    <h2>Carreras</h2>
-                    <a data-shadow="true" data-icon="ui-icon-unco" href="#carrera"  data-role="button" >
-                        Tecnicatura Universitaria en Desarrollo Web
-                    </a>
-                    <a href="#FacultaddeCienciasMédicas"  data-role="button">
-                        Tecnicatura Universitaria en Administración de Sistemas y Software Libre
-                    </a>
-                    <a href="#"  data-role="button">
-                        Analista en computación (carrera cerrada)
-                    </a>
-                    <a href="#"  data-role="button">
-                        Licenciatura en Ciencias de la computación
-                    </a>
-
-                    <h2>Contacto</h2>
-                    <p>Buenos Aires 1400 (8300) Neuquén Capital</p>
-                    <p>Tel. +54(0299)-4490313 al 316 </p>
-                    <p>Telefax 0299 -4490312</p>
-                    <a style="color:black"  onclick="navigator.app.loadUrl('http://faiweb.uncoma.edu.ar', {openExternal: true});">http://faiweb.uncoma.edu.ar</a>
-
-                </div>
-            </div>
             <div  id="buscar_carrera" data-role="page">
                 <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext"></a>
@@ -122,8 +74,24 @@
                     </div>
                 </div>
                 <div data-role="content" >
-                    <a data-shadow="true" data-icon="ui-icon-unco" href="#buscar_carrera_nombre" data-role="button">Nombre</a>
-                    <a data-shadow="true" data-icon="ui-icon-unco" href="#buscar_carrera_filtro"  data-role="button">Búsqueda filtrada</a>
+                    <a data-shadow="true" id="ui-btn-d" href="#buscar_carrera_nombre" data-role="button">Buscar por nombre</a>
+                    <div data-role="collapsible">
+                        <h3>Área</h3>
+                        <ul data-role="listview">
+                            <li><a href="#">Ciencias Económicas<br/> Administración</a></li>
+                            <li><a href="#">Ciencias Agrarias</a></li>
+                            <li><a href="#">Humanidades<br/>Ciencias Sociales</a></li>
+                            <li><a href="#">Idiomas Extranjeros</a></li>
+                            <li><a href="#">Informática</a></li>
+                            <li><a href="#">Pedagogía<br>Ciencias de la Educación</a></li>
+                            <li><a href="#">Ciencias de la Salud</a></li>
+                            <li><a href="#">Ingeniería y<br>Carreras Afines</a></li>
+                            <li><a href="#">Comunicación y Derecho</a></li>
+                            <li><a href="#">Turismo<br/>Deporte</a></li>
+                            <li><a href="#">Ciencias Biológicas<br/>Naturaleza</a></li>
+                        </ul>
+                        
+                    </div>
                 </div>
             </div>
             <div  id="buscar_carrera_nombre" data-role="page">
@@ -142,85 +110,85 @@
                 <input data-type="search" id="divOfPs-input" data-filter-placeholder="Nombre, Area, Ubicación, Duración" >
                 </form>-->
                 <div class="elements" data-filter="true" data-input="#divOfPs-input">
-                   <p><a href="planes/ca434.html">ABOGACÍA</a></br> Comunicación y Derecho</br>General Roca</br>5 años</p>
-<hr/><p><a href="planes/ca303.html">CICLO GENERAL EN CIENCIAS ECONÓMICAS</a></br> Ciencias Económicas / Administración</br>Neuquén Capital</br><hr/><p><a href="planes/ca301.html">CONTADOR PÚBLICO NACIONAL</a></br> Ciencias Económicas / Administración</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca279.html">GUÍA UNIVERSITARIO EN TURISMO</a></br> Turismo / Deporte</br>Neuquén Capital</br>San Martín de los Andes</br>2.5 años</p>
-<hr/><p><a href="planes/ca420.html">INGENIERIA AGRONOMICA</a></br> Ciencias Agrarias</br>Cinco Saltos</br>5.5 años</p>
-<hr/><p><a href="planes/ca245.html">INGENIERÍA CIVIL</a></br> Ingeniería y Carreras Afines</br>Neuquén Capital</br>San Carlos de Bariloche</br>5 años</p>
-<hr/><p><a href="planes/ca242.html">INGENIERÍA ELÉCTRICA</a></br> Ingeniería y Carreras Afines</br>Neuquén Capital</br>San Carlos de Bariloche</br>5 años</p>
-<hr/><p><a href="planes/ca243.html">INGENIERÍA ELECTRÓNICA</a></br> Ingeniería y Carreras Afines</br>Neuquén Capital</br>San Carlos de Bariloche</br>5 años</p>
-<hr/><p><a href="planes/ca247.html">INGENIERÍA EN PETRÓLEO</a></br> Ingeniería y Carreras Afines</br>Neuquén Capital</br>San Carlos de Bariloche</br>5 años</p>
-<hr/><p><a href="planes/ca244.html">INGENIERÍA MECÁNICA</a></br> Ingeniería y Carreras Afines</br>Neuquén Capital</br>San Carlos de Bariloche</br>5 años</p>
-<hr/><p><a href="planes/ca246.html">INGENIERÍA QUÍMICA</a></br> Ingeniería y Carreras Afines</br>Neuquén Capital</br>San Carlos de Bariloche</br>5 años</p>
-<hr/><p><a href="planes/ca302.html">LICENCIATURA EN ADMINISTRACIÓN</a></br> Ciencias Económicas / Administración</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca286.html">LICENCIATURA EN ADMINISTRACION PUBLICA</a></br> Ciencias Económicas / Administración</br>Viedma</br>4 años</p>
-<hr/><p><a href="planes/ca404.html">LICENCIATURA EN BIOLOGÍA MARINA</a></br> San Antonio Oeste</br>5 años</p>
-<hr/><p><a href="planes/ca287.html">LICENCIATURA EN CIENCIA POLITICA</a></br> Humanidades / Ciencias Sociales</br>Viedma</br>5 años</p>
-<hr/><p><a href="planes/ca398.html">LICENCIATURA EN CIENCIAS BIOLÓGICAS</a></br> Ciencias Biológicas / Naturaleza</br>San Carlos de Bariloche</br>5 años</p>
-<hr/><p><a href="planes/ca233.html">LICENCIATURA EN CIENCIAS DE LA COMPUTACIÓN</a></br> Informática</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca255.html">LICENCIATURA EN CIENCIAS DE LA EDUCACION</a></br> Ciencias de la Educación / Pedagogía</br>Cipolletti</br>5 años</p>
-<hr/><p><a href="planes/ca248.html">LICENCIATURA EN CIENCIAS GEOLÓGICAS</a></br> Ciencias Biológicas / Naturaleza</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca442.html">LICENCIATURA EN COMUNICACIÓN SOCIAL CON MENCIÓN EN GESTIÓN Y PRODUCCIÓN</a></br> Comunicación y Derecho</br>Ciencias de la Educación / Pedagogía</br>General Roca</br>4 años</p>
-<hr/><p><a href="planes/ca441.html">LICENCIATURA EN COMUNICACIÓN SOCIAL CON MENCIÓN EN LOCUCIÓN</a></br> Comunicación y Derecho</br>Ciencias de la Educación / Pedagogía</br>General Roca</br>4 años</p>
-<hr/><p><a href="planes/ca440.html">LICENCIATURA EN COMUNICACIÓN SOCIAL CON MENCIÓN EN PERIODISMO</a></br> Comunicación y Derecho</br>Ciencias de la Educación / Pedagogía</br>General Roca</br>4 años</p>
-<hr/><p><a href="planes/ca276.html">LICENCIATURA EN ENFERMERIA</a></br> Ciencias de la Salud</br>Neuquén Capital</br>San Carlos de Bariloche</br>Viedma</br>Allen</br>Choele Choel</br>Esquel</br>Puerto Madryn</br>5 años</p>
-<hr/><p><a href="planes/ca418.html">LICENCIATURA EN FILOSOFÍA</a></br> Humanidades / Ciencias Sociales</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca419.html">LICENCIATURA EN GEOGRAFÍA</a></br> Humanidades / Ciencias Sociales</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca282.html">LICENCIATURA EN GERENCIAMIENTO GASTRONOMICO</a></br> Ciencias Económicas / Administración</br>Villa Regina</br>4 años</p>
-<hr/><p><a href="planes/ca290.html">LICENCIATURA EN GESTION DE EMPRESAS AGROPECUARIAS</a></br> Ciencias Agrarias</br>Viedma</br>5 años</p>
-<hr/><p><a href="planes/ca438.html">LICENCIATURA EN GESTIÓN DE RECURSOS HUMANOS</a></br> Viedma</br>2 años</p>
-<hr/><p><a href="planes/ca432.html">LICENCIATURA EN HIGIENE Y SEGURIDAD EN EL TRABAJO</a></br> Ingeniería y Carreras Afines</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca411.html">LICENCIATURA EN HISTORIA</a></br> Humanidades / Ciencias Sociales</br>San Carlos de Bariloche</br>5 años</p>
-<hr/><p><a href="planes/ca421.html">LICENCIATURA EN HISTORIA</a></br> Humanidades / Ciencias Sociales</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca422.html">LICENCIATURA EN LETRAS</a></br> Humanidades / Ciencias Sociales</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca402.html">LICENCIATURA EN MATEMÁTICA</a></br> Ciencias Económicas / Administración</br>San Carlos de Bariloche</br>4 años</p>
-<hr/><p><a href="planes/ca300.html">LICENCIATURA EN MATEMÁTICA</a></br> Ciencias Económicas / Administración</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca292.html">LICENCIATURA EN PSICOPEDAGOGIA</a></br> Ciencias de la Educación / Pedagogía</br>Viedma</br>5 años</p>
-<hr/><p><a href="planes/ca433.html">LICENCIATURA EN SANEAMIENTO Y PROTECCIÓN AMBIENTAL</a></br> Ciencias Biológicas / Naturaleza</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca443.html">LICENCIATURA EN SERVICIO SOCIAL</a></br> Humanidades / Ciencias Sociales</br>General Roca</br>5 años</p>
-<hr/><p><a href="planes/ca285.html">LICENCIATURA EN SISTEMAS DE INFORMACIÓN</a></br> Informática</br>2.5 años</p>
-<hr/><p><a href="planes/ca265.html">LICENCIATURA EN SOCIOLOGIA</a></br> Humanidades / Ciencias Sociales</br>General Roca</br>5 años</p>
-<hr/><p><a href="planes/ca423.html">LICENCIATURA EN TECNOLOGIA DE LOS ALIMENTOS</a></br> Ciencias Biológicas / Naturaleza</br>Villa Regina</br>5 años</p>
-<hr/><p><a href="planes/ca391.html">LICENCIATURA EN TECNOLOGÍA MINERA</a></br> Ciencias Biológicas / Naturaleza</br>Zapala</br>5 años</p>
-<hr/><p><a href="planes/ca272.html">LICENCIATURA EN TURISMO</a></br> Turismo / Deporte</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca403.html">MEDICINA</a></br> Ciencias de la Salud</br>Cipolletti</br>7 años</p>
-<hr/><p><a href="planes/ca295.html">PROFESORADO EN CIENCIAS AGROPECUARIAS</a></br> Ciencias Agrarias</br>Ciencias de la Educación / Pedagogía</br>Viedma</br>5 años</p>
-<hr/><p><a href="planes/ca397.html">PROFESORADO EN CIENCIAS BIOLÓGICAS</a></br> Ciencias Biológicas / Naturaleza</br>San Carlos de Bariloche</br>4 años</p>
-<hr/><p><a href="planes/ca256.html">PROFESORADO EN CIENCIAS DE LA EDUCACION</a></br> Ciencias de la Educación / Pedagogía</br>Cipolletti</br>5 años</p>
-<hr/><p><a href="planes/ca298.html">PROFESORADO EN CIENCIAS ECONÓMICAS</a></br> Ciencias de la Educación / Pedagogía</br>Ciencias Económicas / Administración</br>Neuquén Capital</br>4 años</p>
-<hr/><p><a href="planes/ca262.html">PROFESORADO EN COMUNICACION SOCIAL</a></br> Comunicación y Derecho</br>General Roca</br>4 años</p>
-<hr/><p><a href="planes/ca400.html">PROFESORADO EN EDUCACIÓN FÍSICA</a></br> Turismo / Deporte</br>San Carlos de Bariloche</br>4 años</p>
-<hr/><p><a href="planes/ca253.html">PROFESORADO EN ENSEÑANZA PRIMARIA</a></br> Ciencias de la Educación / Pedagogía</br>Cipolletti</br>3 años</p>
-<hr/><p><a href="planes/ca268.html">PROFESORADO EN FILOSOFIA</a></br> Ciencias de la Educación / Pedagogía</br>Humanidades / Ciencias Sociales</br>Neuquén Capital</br>5 años</p>
-<hr/><p><a href="planes/ca249.html">PROFESORADO EN FÍSICA</a></br> Ingeniería y Carreras Afines</br>Ciencias de la Educación / Pedagogía</br>Neuquén Capital</br>3.5 años</p>
-<hr/><p><a href="planes/ca269.html">PROFESORADO EN GEOGRAFIA</a></br> Ciencias de la Educación / Pedagogía</br>Humanidades / Ciencias Sociales</br>Neuquén Capital</br>4 años</p>
-<hr/><p><a href="planes/ca270.html">PROFESORADO EN HISTORIA</a></br> Ciencias de la Educación / Pedagogía</br>Humanidades / Ciencias Sociales</br>Neuquén Capital</br>San Carlos de Bariloche</br>5 años</p>
-<hr/><p><a href="planes/ca235.html">PROFESORADO EN INFORMÁTICA</a></br> Informática</br>Ciencias de la Educación / Pedagogía</br>Neuquén Capital</br>4 años</p>
-<hr/><p><a href="planes/ca266.html">PROFESORADO EN INGLES</a></br> Idiomas Extranjeros</br>General Roca</br>5 años</p>
-<hr/><p><a href="planes/ca291.html">PROFESORADO EN LENGUA Y COMUNICACION ORAL Y ESCRITA</a></br> Ciencias de la Educación / Pedagogía</br>Humanidades / Ciencias Sociales</br>Viedma</br>San Antonio Oeste</br>4.5 años</p>
-<hr/><p><a href="planes/ca271.html">PROFESORADO EN LETRAS</a></br> Ciencias de la Educación / Pedagogía</br>Humanidades / Ciencias Sociales</br>Neuquén Capital</br>4 años</p>
-<hr/><p><a href="planes/ca252.html">PROFESORADO EN NIVEL INICIAL</a></br> Ciencias de la Educación / Pedagogía</br>Cipolletti</br>3 años</p>
-<hr/><p><a href="planes/ca293.html">PROFESORADO EN PSICOPEDAGOGIA</a></br> Ciencias de la Educación / Pedagogía</br>Viedma</br>5 años</p>
-<hr/><p><a href="planes/ca274.html">PROFESORADO EN QUIMICA</a></br> Ingeniería y Carreras Afines</br>Ciencias de la Educación / Pedagogía</br>Neuquén Capital</br>4 años</p>
-<hr/><p><a href="planes/ca435.html">PROFESORADO UNIVERSITARIO EN CIENCIA POLÍTICA</a></br> Viedma</br>5 años</p>
-<hr/><p><a href="planes/ca283.html">PROFESORADO UNIVERSITARIO EN MATEMÁTICA</a></br> Ciencias de la Educación / Pedagogía</br>Ciencias Económicas / Administración</br>Neuquén Capital</br>4 años</p>
-<hr/><p><a href="planes/ca401.html">PROFESORADO UNIVERSITARIO EN MATEMÁTICA</a></br> Ciencias Económicas / Administración</br>San Carlos de Bariloche</br>4 años</p>
-<hr/><p><a href="planes/ca307.html">PSICOLOGIA</a></br> Ciencias de la Salud</br>Cipolletti</br>5 años</p>
-<hr/><p><a href="planes/ca416.html">TECNICATURA EN CONTROL E HIGIENE DE LOS ALIMENTOS</a></br> Ciencias Biológicas / Naturaleza</br>San Antonio Oeste</br>3 años</p>
-<hr/><p><a href="planes/ca425.html">TECNICATURA EN CONTROL E HIGIENE DE LOS ALIMENTOS</a></br> Ciencias Biológicas / Naturaleza</br>Villa Regina</br>3 años</p>
-<hr/><p><a href="planes/ca278.html">TECNICATURA EN EMPRESAS DE SERVICIOS TURÍSTICOS</a></br> Turismo / Deporte</br>Neuquén Capital</br>2.5 años</p>
-<hr/><p><a href="planes/ca426.html">TECNICATURA EN PLANIFICACION AMBIENTAL</a></br> Ciencias Biológicas / Naturaleza</br>Neuquén Capital</br>2.5 años</p>
-<hr/><p><a href="planes/ca390.html">TECNICATURA EN PLANTAS Y ANÁLISIS DE MENAS</a></br> Ciencias Biológicas / Naturaleza</br>Zapala</br>3 años</p>
-<hr/><p><a href="planes/ca414.html">TECNICATURA EN PRODUCCIÓN PESQUERA Y MARICULTURA</a></br> Ciencias Biológicas / Naturaleza</br>San Antonio Oeste</br>2.5 años</p>
-<hr/><p><a href="planes/ca436.html">TECNICATURA SUPERIOR EN PRODUCCIÓN AGROPECUARIA</a></br> Ciencias Agrarias</br>Viedma</br>3 años</p>
-<hr/><p><a href="planes/ca238.html">TECNICATURA UNIVERSITARIA EN ADMINISTRACIÓN DE SISTEMAS Y SOFTWARE LIBRE</a></br> Informática</br>Neuquén Capital</br>Viedma</br>2.5 años</p>
-<hr/><p><a href="planes/ca296.html">TECNICATURA UNIVERSITARIA EN ADMINISTRACION PUBLICA</a></br> Ciencias Económicas / Administración</br>Viedma</br>3 años</p>
-<hr/><p><a href="planes/ca236.html">TECNICATURA UNIVERSITARIA EN DESARROLLO WEB</a></br> Informática</br>Neuquén Capital</br>2.5 años</p>
-<hr/><p><a href="planes/ca394.html">TECNICATURA UNIVERSITARIA EN ESPACIOS VERDES</a></br> Ciencias Agrarias</br>San Martín de los Andes</br>3 años</p>
-<hr/><p><a href="planes/ca392.html">TECNICATURA UNIVERSITARIA EN TOPOGRAFÍA</a></br> Ciencias Biológicas / Naturaleza</br>Zapala</br>3 años</p>
-<hr/><p><a href="planes/ca399.html">TÉCNICO UNIVERSITARIO EN ACUICULTURA</a></br> Ciencias Biológicas / Naturaleza</br>San Carlos de Bariloche</br>3 años</p>
-<hr/><p><a href="planes/ca393.html">TÉCNICO UNIVERSITARIO FORESTAL</a></br> Ciencias Agrarias</br>San Martín de los Andes</br>3 años</p>
-<hr/><p><a href="planes/ca417.html">TRADUCTORADO PÚBLICO EN IDIOMA INGLÉS</a></br> Idiomas Extranjeros</br>General Roca</br>5 años</p>
+                   <p><a href="planes/ca434.html">ABOGACÍA</a></br>  - Comunicación y Derecho</br> - General Roca</br> - 5 años</p>
+<hr/><p><a href="planes/ca303.html">CICLO GENERAL EN CIENCIAS ECONÓMICAS</a></br>  - Ciencias Económicas / Administración</br> - Neuquén Capital</br><hr/><p><a href="planes/ca301.html">CONTADOR PÚBLICO NACIONAL</a></br>  - Ciencias Económicas / Administración</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca279.html">GUÍA UNIVERSITARIO EN TURISMO</a></br>  - Turismo / Deporte</br> - Neuquén Capital</br> - San Martín de los Andes</br> - 2.5 años</p>
+<hr/><p><a href="planes/ca420.html">INGENIERIA AGRONOMICA</a></br>  - Ciencias Agrarias</br> - Cinco Saltos</br> - 5.5 años</p>
+<hr/><p><a href="planes/ca245.html">INGENIERÍA CIVIL</a></br>  - Ingeniería y Carreras Afines</br> - Neuquén Capital</br> - San Carlos de Bariloche</br> - 5 años</p>
+<hr/><p><a href="planes/ca242.html">INGENIERÍA ELÉCTRICA</a></br>  - Ingeniería y Carreras Afines</br> - Neuquén Capital</br> - San Carlos de Bariloche</br> - 5 años</p>
+<hr/><p><a href="planes/ca243.html">INGENIERÍA ELECTRÓNICA</a></br>  - Ingeniería y Carreras Afines</br> - Neuquén Capital</br> - San Carlos de Bariloche</br> - 5 años</p>
+<hr/><p><a href="planes/ca247.html">INGENIERÍA EN PETRÓLEO</a></br>  - Ingeniería y Carreras Afines</br> - Neuquén Capital</br> - San Carlos de Bariloche</br> - 5 años</p>
+<hr/><p><a href="planes/ca244.html">INGENIERÍA MECÁNICA</a></br>  - Ingeniería y Carreras Afines</br> - Neuquén Capital</br> - San Carlos de Bariloche</br> - 5 años</p>
+<hr/><p><a href="planes/ca246.html">INGENIERÍA QUÍMICA</a></br>  - Ingeniería y Carreras Afines</br> - Neuquén Capital</br> - San Carlos de Bariloche</br> - 5 años</p>
+<hr/><p><a href="planes/ca302.html">LICENCIATURA EN ADMINISTRACIÓN</a></br>  - Ciencias Económicas / Administración</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca286.html">LICENCIATURA EN ADMINISTRACION PUBLICA</a></br>  - Ciencias Económicas / Administración</br> - Viedma</br> - 4 años</p>
+<hr/><p><a href="planes/ca404.html">LICENCIATURA EN BIOLOGÍA MARINA</a></br>  - San Antonio Oeste</br> - 5 años</p>
+<hr/><p><a href="planes/ca287.html">LICENCIATURA EN CIENCIA POLITICA</a></br>  - Humanidades / Ciencias Sociales</br> - Viedma</br> - 5 años</p>
+<hr/><p><a href="planes/ca398.html">LICENCIATURA EN CIENCIAS BIOLÓGICAS</a></br>  - Ciencias Biológicas / Naturaleza</br> - San Carlos de Bariloche</br> - 5 años</p>
+<hr/><p><a href="planes/ca233.html">LICENCIATURA EN CIENCIAS DE LA COMPUTACIÓN</a></br>  - Informática</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca255.html">LICENCIATURA EN CIENCIAS DE LA EDUCACION</a></br>  - Ciencias de la Educación / Pedagogía</br> - Cipolletti</br> - 5 años</p>
+<hr/><p><a href="planes/ca248.html">LICENCIATURA EN CIENCIAS GEOLÓGICAS</a></br>  - Ciencias Biológicas / Naturaleza</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca442.html">LICENCIATURA EN COMUNICACIÓN SOCIAL CON MENCIÓN EN GESTIÓN Y PRODUCCIÓN</a></br>  - Comunicación y Derecho</br> - Ciencias de la Educación / Pedagogía</br> - 4 años</p>
+<hr/><p><a href="planes/ca441.html">LICENCIATURA EN COMUNICACIÓN SOCIAL CON MENCIÓN EN LOCUCIÓN</a></br>  - Comunicación y Derecho</br> - Ciencias de la Educación / Pedagogía</br> - General Roca</br> - 4 años</p>
+<hr/><p><a href="planes/ca440.html">LICENCIATURA EN COMUNICACIÓN SOCIAL CON MENCIÓN EN PERIODISMO</a></br>  - Comunicación y Derecho</br> - Ciencias de la Educación / Pedagogía</br> - General Roca</br> - 4 años</p>
+<hr/><p><a href="planes/ca276.html">LICENCIATURA EN ENFERMERIA</a></br>  - Ciencias de la Salud</br> - Neuquén Capital</br> - San Carlos de Bariloche</br> - Allen</br> - Esquel</br> - Choele Choel</br> - Puerto Madryn</br> - 5 años</p>
+<hr/><p><a href="planes/ca418.html">LICENCIATURA EN FILOSOFÍA</a></br>  - Humanidades / Ciencias Sociales</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca419.html">LICENCIATURA EN GEOGRAFÍA</a></br>  - Humanidades / Ciencias Sociales</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca282.html">LICENCIATURA EN GERENCIAMIENTO GASTRONOMICO</a></br>  - Ciencias Económicas / Administración</br> - Villa Regina</br> - 4 años</p>
+<hr/><p><a href="planes/ca290.html">LICENCIATURA EN GESTION DE EMPRESAS AGROPECUARIAS</a></br>  - Ciencias Agrarias</br> - Viedma</br> - 5 años</p>
+<hr/><p><a href="planes/ca438.html">LICENCIATURA EN GESTIÓN DE RECURSOS HUMANOS</a></br>  - Viedma</br> - 2 años</p>
+<hr/><p><a href="planes/ca432.html">LICENCIATURA EN HIGIENE Y SEGURIDAD EN EL TRABAJO</a></br>  - Ingeniería y Carreras Afines</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca411.html">LICENCIATURA EN HISTORIA</a></br>  - Humanidades / Ciencias Sociales</br> - San Carlos de Bariloche</br> - 5 años</p>
+<hr/><p><a href="planes/ca421.html">LICENCIATURA EN HISTORIA</a></br>  - Humanidades / Ciencias Sociales</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca422.html">LICENCIATURA EN LETRAS</a></br>  - Humanidades / Ciencias Sociales</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca300.html">LICENCIATURA EN MATEMÁTICA</a></br>  - Ciencias Económicas / Administración</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca402.html">LICENCIATURA EN MATEMÁTICA</a></br>  - Ciencias Económicas / Administración</br> - San Carlos de Bariloche</br> - 4 años</p>
+<hr/><p><a href="planes/ca292.html">LICENCIATURA EN PSICOPEDAGOGIA</a></br>  - Ciencias de la Educación / Pedagogía</br> - Viedma</br> - 5 años</p>
+<hr/><p><a href="planes/ca433.html">LICENCIATURA EN SANEAMIENTO Y PROTECCIÓN AMBIENTAL</a></br>  - Ciencias Biológicas / Naturaleza</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca443.html">LICENCIATURA EN SERVICIO SOCIAL</a></br>  - Humanidades / Ciencias Sociales</br> - General Roca</br> - 5 años</p>
+<hr/><p><a href="planes/ca285.html">LICENCIATURA EN SISTEMAS DE INFORMACIÓN</a></br>  - Informática</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca265.html">LICENCIATURA EN SOCIOLOGIA</a></br>  - Humanidades / Ciencias Sociales</br> - General Roca</br> - 5 años</p>
+<hr/><p><a href="planes/ca423.html">LICENCIATURA EN TECNOLOGIA DE LOS ALIMENTOS</a></br>  - Ciencias Biológicas / Naturaleza</br> - Villa Regina</br> - 5 años</p>
+<hr/><p><a href="planes/ca391.html">LICENCIATURA EN TECNOLOGÍA MINERA</a></br>  - Ciencias Biológicas / Naturaleza</br> - Zapala</br> - 5 años</p>
+<hr/><p><a href="planes/ca272.html">LICENCIATURA EN TURISMO</a></br>  - Turismo / Deporte</br> - 5 años</p>
+<hr/><p><a href="planes/ca403.html">MEDICINA</a></br>  - Ciencias de la Salud</br> - Cipolletti</br> - 7 años</p>
+<hr/><p><a href="planes/ca295.html">PROFESORADO EN CIENCIAS AGROPECUARIAS</a></br>  - Ciencias Agrarias</br> - Ciencias de la Educación / Pedagogía</br> - Viedma</br> - 5 años</p>
+<hr/><p><a href="planes/ca397.html">PROFESORADO EN CIENCIAS BIOLÓGICAS</a></br>  - Ciencias Biológicas / Naturaleza</br> - San Carlos de Bariloche</br> - 4 años</p>
+<hr/><p><a href="planes/ca256.html">PROFESORADO EN CIENCIAS DE LA EDUCACION</a></br>  - Ciencias de la Educación / Pedagogía</br> - Cipolletti</br> - 5 años</p>
+<hr/><p><a href="planes/ca298.html">PROFESORADO EN CIENCIAS ECONÓMICAS</a></br>  - Ciencias de la Educación / Pedagogía</br> - Ciencias Económicas / Administración</br> - Neuquén Capital</br> - 4 años</p>
+<hr/><p><a href="planes/ca262.html">PROFESORADO EN COMUNICACION SOCIAL</a></br>  - Comunicación y Derecho</br> - General Roca</br> - 4 años</p>
+<hr/><p><a href="planes/ca400.html">PROFESORADO EN EDUCACIÓN FÍSICA</a></br>  - Turismo / Deporte</br> - San Carlos de Bariloche</br> - 4 años</p>
+<hr/><p><a href="planes/ca253.html">PROFESORADO EN ENSEÑANZA PRIMARIA</a></br>  - Ciencias de la Educación / Pedagogía</br> - Cipolletti</br> - 3 años</p>
+<hr/><p><a href="planes/ca268.html">PROFESORADO EN FILOSOFIA</a></br>  - Ciencias de la Educación / Pedagogía</br> - Humanidades / Ciencias Sociales</br> - Neuquén Capital</br> - 5 años</p>
+<hr/><p><a href="planes/ca249.html">PROFESORADO EN FÍSICA</a></br>  - Ingeniería y Carreras Afines</br> - Ciencias de la Educación / Pedagogía</br> - Neuquén Capital</br> - 3.5 años</p>
+<hr/><p><a href="planes/ca269.html">PROFESORADO EN GEOGRAFIA</a></br>  - Ciencias de la Educación / Pedagogía</br> - Humanidades / Ciencias Sociales</br> - Neuquén Capital</br> - 4 años</p>
+<hr/><p><a href="planes/ca270.html">PROFESORADO EN HISTORIA</a></br>  - Ciencias de la Educación / Pedagogía</br> - Humanidades / Ciencias Sociales</br> - Neuquén Capital</br> - San Carlos de Bariloche</br> - 5 años</p>
+<hr/><p><a href="planes/ca235.html">PROFESORADO EN INFORMÁTICA</a></br>  - Informática</br> - Ciencias de la Educación / Pedagogía</br> - Neuquén Capital</br> - 4 años</p>
+<hr/><p><a href="planes/ca266.html">PROFESORADO EN INGLES</a></br>  - Idiomas Extranjeros</br> - General Roca</br> - 5 años</p>
+<hr/><p><a href="planes/ca291.html">PROFESORADO EN LENGUA Y COMUNICACION ORAL Y ESCRITA</a></br>  - Ciencias de la Educación / Pedagogía</br> - Humanidades / Ciencias Sociales</br> - Viedma</br> - 4.5 años</p>
+<hr/><p><a href="planes/ca271.html">PROFESORADO EN LETRAS</a></br>  - Ciencias de la Educación / Pedagogía</br> - Humanidades / Ciencias Sociales</br> - Neuquén Capital</br> - 4 años</p>
+<hr/><p><a href="planes/ca252.html">PROFESORADO EN NIVEL INICIAL</a></br>  - Ciencias de la Educación / Pedagogía</br> - Cipolletti</br> - 3 años</p>
+<hr/><p><a href="planes/ca293.html">PROFESORADO EN PSICOPEDAGOGIA</a></br>  - Ciencias de la Educación / Pedagogía</br> - Viedma</br> - 5 años</p>
+<hr/><p><a href="planes/ca274.html">PROFESORADO EN QUIMICA</a></br>  - Ingeniería y Carreras Afines</br> - Ciencias de la Educación / Pedagogía</br> - Neuquén Capital</br> - 4 años</p>
+<hr/><p><a href="planes/ca435.html">PROFESORADO UNIVERSITARIO EN CIENCIA POLÍTICA</a></br>  - Viedma</br> - 5 años</p>
+<hr/><p><a href="planes/ca401.html">PROFESORADO UNIVERSITARIO EN MATEMÁTICA</a></br>  - Ciencias Económicas / Administración</br> - San Carlos de Bariloche</br> - 4 años</p>
+<hr/><p><a href="planes/ca283.html">PROFESORADO UNIVERSITARIO EN MATEMÁTICA</a></br>  - Ciencias de la Educación / Pedagogía</br> - Ciencias Económicas / Administración</br> - Neuquén Capital</br> - 4 años</p>
+<hr/><p><a href="planes/ca307.html">PSICOLOGIA</a></br>  - Ciencias de la Salud</br> - Cipolletti</br> - 5 años</p>
+<hr/><p><a href="planes/ca416.html">TECNICATURA EN CONTROL E HIGIENE DE LOS ALIMENTOS</a></br>  - Ciencias Biológicas / Naturaleza</br> - San Antonio Oeste</br> - 3 años</p>
+<hr/><p><a href="planes/ca425.html">TECNICATURA EN CONTROL E HIGIENE DE LOS ALIMENTOS</a></br>  - Ciencias Biológicas / Naturaleza</br> - Villa Regina</br> - 3 años</p>
+<hr/><p><a href="planes/ca278.html">TECNICATURA EN EMPRESAS DE SERVICIOS TURÍSTICOS</a></br>  - Turismo / Deporte</br> - Neuquén Capital</br> - 2.5 años</p>
+<hr/><p><a href="planes/ca426.html">TECNICATURA EN PLANIFICACION AMBIENTAL</a></br>  - Ciencias Biológicas / Naturaleza</br> - Neuquén Capital</br> - 2.5 años</p>
+<hr/><p><a href="planes/ca390.html">TECNICATURA EN PLANTAS Y ANÁLISIS DE MENAS</a></br>  - Ciencias Biológicas / Naturaleza</br> - Zapala</br> - 3 años</p>
+<hr/><p><a href="planes/ca414.html">TECNICATURA EN PRODUCCIÓN PESQUERA Y MARICULTURA</a></br>  - Ciencias Biológicas / Naturaleza</br> - San Antonio Oeste</br> - 2.5 años</p>
+<hr/><p><a href="planes/ca436.html">TECNICATURA SUPERIOR EN PRODUCCIÓN AGROPECUARIA</a></br>  - Ciencias Agrarias</br> - Viedma</br> - 3 años</p>
+<hr/><p><a href="planes/ca238.html">TECNICATURA UNIVERSITARIA EN ADMINISTRACIÓN DE SISTEMAS Y SOFTWARE LIBRE</a></br>  - Informática</br> - Neuquén Capital</br> - 2.5 años</p>
+<hr/><p><a href="planes/ca296.html">TECNICATURA UNIVERSITARIA EN ADMINISTRACION PUBLICA</a></br>  - Ciencias Económicas / Administración</br> - Viedma</br> - 3 años</p>
+<hr/><p><a href="planes/ca236.html">TECNICATURA UNIVERSITARIA EN DESARROLLO WEB</a></br>  - Informática</br> - Neuquén Capital</br> - 2.5 años</p>
+<hr/><p><a href="planes/ca394.html">TECNICATURA UNIVERSITARIA EN ESPACIOS VERDES</a></br>  - Ciencias Agrarias</br> - San Martín de los Andes</br> - 3 años</p>
+<hr/><p><a href="planes/ca392.html">TECNICATURA UNIVERSITARIA EN TOPOGRAFÍA</a></br>  - Ciencias Biológicas / Naturaleza</br> - Zapala</br> - 3 años</p>
+<hr/><p><a href="planes/ca399.html">TÉCNICO UNIVERSITARIO EN ACUICULTURA</a></br>  - Ciencias Biológicas / Naturaleza</br> - San Carlos de Bariloche</br> - 3 años</p>
+<hr/><p><a href="planes/ca393.html">TÉCNICO UNIVERSITARIO FORESTAL</a></br>  - Ciencias Agrarias</br> - San Martín de los Andes</br> - 3 años</p>
+<hr/><p><a href="planes/ca417.html">TRADUCTORADO PÚBLICO EN IDIOMA INGLÉS</a></br>  - Idiomas Extranjeros</br> - General Roca</br> - 5 años</p>
 <hr/>                </div>
 
                     
@@ -238,30 +206,28 @@
                     <div data-role="collapsible">
                         <h3>Área</h3>
                         <fieldset data-role="controlgroup" data-inset="true">
-                            <input type="checkbox" name="r1" id="TodasAreas" value="on" checked="checked">
-                            <label for="TodasAreas">Todas las áreas</label>
                             <input type="checkbox" name="r1" id="Ciencias_Económicas" value="off">
-                            <label for="Ciencias_Económicas">Ciencias Económicas</label>
-                            <input type="checkbox" name="r1" id="Agronomia_Agricultura" value="off">
-                            <label for="Agronomia_Agricultura">Agronomia/Agricultura</label>
+                            <label for="Ciencias_Económicas">Ciencias Económicas/Administración</label>
+                            <input type="checkbox" name="r1" id="Ciencias_Agrarias" value="off">
+                            <label for="Ciencias_Agrarias">Ciencias Agrarias</label>
                             <input type="checkbox" name="r1" id="Humanidades_Ciencias_Sociales" value="off">
                             <label for="Humanidades_Ciencias_Sociales">Humanidades/Ciencias Sociales</label>
                             <input type="checkbox" name="r1" id="Idiomas_Extranjeros" value="off">
                             <label for="Idiomas_Extranjeros">Idiomas Extranjeros</label>
                             <input type="checkbox" name="r1" id="Informática" value="off">
                             <label for="Informática">Informática</label>
-                            <input type="checkbox" name="r1" id="Ciencias_Exactas_y_Naturales" value="off">
-                            <label for="Ciencias_Exactas_y_Naturales">Ciencias Exactas y Naturales</label>
                             <input type="checkbox" name="r1" id="Pedagogía_Ciencias_de_la_Educación" value="off">
                             <label for="Pedagogía_Ciencias_de_la_Educación">Pedagogía/Ciencias de la Educación</label>
                             <input type="checkbox" name="r1" id="Salud" value="off">
-                            <label for="Salud">Salud</label>
+                            <label for="Salud">Ciencias de la Salud</label>
                             <input type="checkbox" name="r1" id="Ingeniería_y_Carreras_Afines" value="off">
                             <label for="Ingeniería_y_Carreras_Afines">Ingeniería y Carreras Afines</label>
                             <input type="checkbox" name="r1" id="Comunicación_y_Derecho" value="off">
                             <label for="Comunicación_y_Derecho">Comunicación y Derecho</label>
-                            <input type="checkbox" name="r1" id="Turismo_Deporte_Medio_Ambiente" value="off">
-                            <label for="Turismo_Deporte_Medio_Ambiente">Turismo, Deporte, Medio Ambiente</label>
+                            <input type="checkbox" name="r1" id="Turismo_Deporte" value="off">
+                            <label for="Turismo_Deporte">Turismo/Deporte</label>
+                            <input type="checkbox" name="r1" id="Ciencias_Biologicas" value="off">
+                            <label for="Ciencias_Biologicas">Ciencias Biológicas/Naturaleza</label>
                         </fieldset>
                     </div>
                     <div data-role="collapsible">
