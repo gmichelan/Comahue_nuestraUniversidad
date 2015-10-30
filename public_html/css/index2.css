@@ -2,6 +2,22 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
+.custom-centercollheader a {
+    text-align: center !important;
+    color: white !important;
+    background-color: #DBA901 !important;
+    border-color: #DBA901 !important;
+   
+}
+
+.custom-centercollheader2 a {
+    text-align: center !important;
+    color: white !important;
+    background-color: #0B610B !important;
+    border-color: #0B610B !important;
+   
+}
+
 .centerText{
     text-align:center;
 }
@@ -46,7 +62,8 @@ h1, h3{
 }
 #ui-btn-d{
     border: 1px solid #C1392B;
-    background: none repeat scroll 0% 0% #C1392B;
+    //background: none repeat scroll 0% 0% #C1392B !important;
+    background-color:  #C1392B !important;
     font-weight: bold;
     color: #FFFFFF;
     /*height: 40px;*/
