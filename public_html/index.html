@@ -23,12 +23,12 @@
                     <div id="menu">
                          
                         <!--a data-icon="grid" data-theme="a" data-role="button" href="#unidades">Unidades académicas</a-->
-                        <div style="padding-bottom: 10px"><a data-role="button" id="ui-btn-d" class="ui-btn  ui-corner-all" data-icon="info" href="#buscar_carrera" >Buscar Carrera</a></div>
+                        <div class="separar-bot"><a data-role="button" id="ui-btn-d" class="ui-btn  ui-corner-all" data-icon="info" href="#buscar_carrera" >Buscar Carrera</a></div>
                         <!--a data-icon="flat-time" data-theme="f" href="#institucional"  data-role="button">Institucional</a-->
 
 
 
-                        <div style="padding-bottom: 10px"><a id="ui-btn-c" href="#contact"  data-role="button">Contacto</a></div>
+                        <div class="separar-bot"><a id="ui-btn-c" href="#contact"  data-role="button">Contacto</a></div>
                         <a id="ui-btn-e" href="#about-page"  data-role="button" >Acerca de</a>
 
 
@@ -65,63 +65,14 @@
                     <a onclick="navigator.app.loadUrl('http://www.uncoma.edu.ar', {openExternal: true});">www.uncoma.edu.ar</a>
                     
                 </div>
-            </div>
-            <div  id="buscar_carrera_filtro" data-role="page">
-                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
-                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext"></a>
-                    
-                    <div id="logoContainer" class="centerText">
-                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
+                    <div id="navbar" data-role="navbar">
+                        <ul>
+                            <li><!--a id="sponsor1" onclick="navigator.app.loadUrl('http://www.ypf.com', { openExternal:true });" ><img src="img/ypf.jpeg" id="ypf" class="sponsor" /></a--></li>
+                            <li><a id="sponsor2" class="blue" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
+                            <li><!--a id="sponsor3" class="blue" href="#search-page" ></a--></li>
+                        </ul>
                     </div>
-                </div>
-                <div data-role="content" >
-                    <div data-role="collapsible">
-                        <h3>Área</h3>
-                        <fieldset data-role="controlgroup" data-inset="true">
-                            <input type="checkbox" name="r1" id="Ciencias_Económicas" value="off">
-                            <label for="Ciencias_Económicas">Ciencias Económicas/Administración</label>
-                            <input type="checkbox" name="r1" id="Ciencias_Agrarias" value="off">
-                            <label for="Ciencias_Agrarias">Ciencias Agrarias</label>
-                            <input type="checkbox" name="r1" id="Humanidades_Ciencias_Sociales" value="off">
-                            <label for="Humanidades_Ciencias_Sociales">Humanidades/Ciencias Sociales</label>
-                            <input type="checkbox" name="r1" id="Idiomas_Extranjeros" value="off">
-                            <label for="Idiomas_Extranjeros">Idiomas Extranjeros</label>
-                            <input type="checkbox" name="r1" id="Informática" value="off">
-                            <label for="Informática">Informática</label>
-                            <input type="checkbox" name="r1" id="Pedagogía_Ciencias_de_la_Educación" value="off">
-                            <label for="Pedagogía_Ciencias_de_la_Educación">Pedagogía/Ciencias de la Educación</label>
-                            <input type="checkbox" name="r1" id="Salud" value="off">
-                            <label for="Salud">Ciencias de la Salud</label>
-                            <input type="checkbox" name="r1" id="Ingeniería_y_Carreras_Afines" value="off">
-                            <label for="Ingeniería_y_Carreras_Afines">Ingeniería y Carreras Afines</label>
-                            <input type="checkbox" name="r1" id="Comunicación_y_Derecho" value="off">
-                            <label for="Comunicación_y_Derecho">Comunicación y Derecho</label>
-                            <input type="checkbox" name="r1" id="Turismo_Deporte" value="off">
-                            <label for="Turismo_Deporte">Turismo/Deporte</label>
-                            <input type="checkbox" name="r1" id="Ciencias_Biologicas" value="off">
-                            <label for="Ciencias_Biologicas">Ciencias Biológicas/Naturaleza</label>
-                        </fieldset>
-                    </div>
-                    <div data-role="collapsible">
-                        <h3>Duración</h3>
-                        <fieldset data-role="controlgroup" data-inset="true">
-                            <input type="checkbox" name="r1" id="TodasDuraciones" value="on" checked="checked">
-                            <label for="TodasDuraciones">Todas las duraciones</label>
-                            <input type="checkbox" name="r1" id="dos_y_medio" value="on">
-                            <label for="dos_y_medio">2,5 años</label>
-                            <input type="checkbox" name="r1" id="tres" value="on">
-                            <label for="tres">3 años</label>
-                            <input type="checkbox" name="r1" id="tres_y_medio" value="on">
-                            <label for="tres_y_medio">3,5 años</label>
-                            <input type="checkbox" name="r1" id="cuatro" value="on">
-                            <label for="cuatro">4 años</label>
-                            <input type="checkbox" name="r1" id="cinco" value="on">
-                            <label for="cinco">5 años</label>
-                            <input type="checkbox" name="r1" id="seis" value="on">
-                            <label for="seis">6 años</label>
-                        </fieldset>
-                    </div>
-                    <a href="#"  data-role="button" data-icon="search" data-inline="true" id="filter-button">Filtrar</a>
                 </div>
             </div>
  
@@ -181,13 +132,21 @@
                     <div><img src="img/funyder.png"/><br>
                     <h4>Aplicación todavía en desarrollo...</h4></div>
                 </div>
+                <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
+                    <div id="navbar" data-role="navbar">
+                        <ul>
+                            <li><!--a id="sponsor1" onclick="navigator.app.loadUrl('http://www.ypf.com', { openExternal:true });" ><img src="img/ypf.jpeg" id="ypf" class="sponsor" /></a--></li>
+                            <li><a id="sponsor2" class="blue" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
+                            <li><!--a id="sponsor3" class="blue" href="#search-page" ></a--></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
 
         <script type="text/javascript" src="libs/fastclick.min.js"></script>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="libs/jquery-2.0.3.min.js"></script>
-<!--        <script type="text/javascript" src="libs/jQueryMobile/jquery.mobile-1.3.2.min.js"></script>-->
         <script type="text/javascript" src="libs/jQueryMobile/jquery.mobile-1.4.3.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         
@@ -201,30 +160,30 @@
                 </div>
                 <div data-role="content" >
                     <a data-shadow="true" id="ui-btn-d" href="busquedaFiltro.html?carrera=normal" data-role="button">Buscar por nombre</a>
-                    <div data-role="collapsible">
+                    <div class="separar-top" data-role="collapsible">
                         <h3 class="custom-centercollheader">Área</h3>
                         <ul data-role="listview">
-                            <li><a href="busquedaFiltro.html?carrera=econ">Ciencias Económicas<br/> Administración</a></li>
-                            <li><a href="busquedaFiltro.html?carrera=agrarias">Ciencias Agrarias</a></li>
-                            <li><a href="busquedaFiltro.html?carrera=humanidades">Humanidades<br/>Ciencias Sociales</a></li>
-                            <li><a href="busquedaFiltro.html?carrera=idiomas">Idiomas Extranjeros</a></li>
-                            <li><a href="busquedaFiltro.html?carrera=inform">Informática</a></li>
-                            <li><a href="busquedaFiltro.html?carrera=educaci">Pedagogía<br>Ciencias de la Educación</a></li>
-                            <li><a href="busquedaFiltro.html?carrera=salud">Ciencias de la Salud</a></li>
-                            <li><a href="busquedaFiltro.html?carrera=ingenier">Ingeniería y<br>Carreras Afines</a></li>
-                            <li><a href="busquedaFiltro.html?carrera=comunicaci">Comunicación y Derecho</a></li>
-                            <li><a href="busquedaFiltro.html?carrera=turismo">Turismo<br/>Deporte</a></li>
-                            <li><a href="busquedaFiltro.html?carrera=naturaleza">Ciencias Biológicas<br/>Naturaleza</a></li>
+                            <li class="custom-centercollheaderr"><a href="busquedaFiltro.html?carrera=econ">Ciencias Económicas<br/> Administración</a></li>
+                            <li class="custom-centercollheaderr"><a href="busquedaFiltro.html?carrera=agrarias">Ciencias Agrarias</a></li>
+                            <li class="custom-centercollheaderr"><a href="busquedaFiltro.html?carrera=humanidades">Humanidades<br/>Ciencias Sociales</a></li>
+                            <li class="custom-centercollheaderr"><a href="busquedaFiltro.html?carrera=idiomas">Idiomas Extranjeros</a></li>
+                            <li class="custom-centercollheaderr"><a href="busquedaFiltro.html?carrera=inform">Informática</a></li>
+                            <li class="custom-centercollheaderr"><a href="busquedaFiltro.html?carrera=educaci">Pedagogía<br>Ciencias de la Educación</a></li>
+                            <li class="custom-centercollheaderr"><a href="busquedaFiltro.html?carrera=salud">Ciencias de la Salud</a></li>
+                            <li class="custom-centercollheaderr"><a href="busquedaFiltro.html?carrera=ingenier">Ingeniería y<br>Carreras Afines</a></li>
+                            <li class="custom-centercollheaderr"><a href="busquedaFiltro.html?carrera=comunicaci">Comunicación y Derecho</a></li>
+                            <li class="custom-centercollheaderr"><a href="busquedaFiltro.html?carrera=turismo">Turismo<br/>Deporte</a></li>
+                            <li class="custom-centercollheaderr"><a href="busquedaFiltro.html?carrera=naturaleza">Ciencias Biológicas<br/>Naturaleza</a></li>
                         </ul>              
                     </div>
-                    <div data-role="collapsible">
+                    <div class="separar-top" data-role="collapsible">
                         <h3 class="custom-centercollheader2">Duración</h3>
                         <ul data-role="listview">
-                            <li><a href="busquedaFiltro.html?dura=2">2 años</a></li>
-                            <li><a href="busquedaFiltro.html?dura=3">3 años</a></li>
-                            <li><a href="busquedaFiltro.html?dura=4">4 años</a></li>
-                            <li><a href="busquedaFiltro.html?dura=5">5 años</a></li>
-                            <li><a href="busquedaFiltro.html?dura=7">7 años</a></li>
+                            <li class="custom-centercollheaderr2"><a href="busquedaFiltro.html?dura=2">2 años</a></li>
+                            <li class="custom-centercollheaderr2"><a href="busquedaFiltro.html?dura=3">3 años</a></li>
+                            <li class="custom-centercollheaderr2"><a href="busquedaFiltro.html?dura=4">4 años</a></li>
+                            <li class="custom-centercollheaderr2"><a href="busquedaFiltro.html?dura=5">5 años</a></li>
+                            <li class="custom-centercollheaderr2"><a href="busquedaFiltro.html?dura=7">7 años</a></li>
                         </ul>              
                     </div>
                 </div>

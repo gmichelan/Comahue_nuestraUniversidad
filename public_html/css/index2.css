@@ -2,19 +2,44 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
+.separar-bot{
+    padding-bottom: 10px;
+}
+
+.separar-top{
+    padding-top: 10px;
+}
+
 .custom-centercollheader a {
+    text-shadow: 3px 3px 2px #000 !important;
     text-align: center !important;
     color: white !important;
     background-color: #DBA901 !important;
     border-color: #DBA901 !important;
    
 }
+.custom-centercollheaderr a {
+    text-shadow: 3px 3px 2px #000 !important;
+    color: white !important;
+    background-color: #DBA901 !important;
+    border-color: #000 !important;
+   
+}
 
 .custom-centercollheader2 a {
+    text-shadow: 3px 3px 2px #000 !important;
     text-align: center !important;
     color: white !important;
     background-color: #0B610B !important;
     border-color: #0B610B !important;
+   
+}
+
+.custom-centercollheaderr2 a {
+    text-shadow: 3px 3px 2px #000 !important;
+    color: white !important;
+    background-color: #0B610B !important;
+    border-color: #000 !important;
    
 }
 
@@ -61,6 +86,7 @@ h1, h3{
 
 }
 #ui-btn-d{
+    text-shadow: 3px 3px 2px #000 !important;
     border: 1px solid #C1392B;
     //background: none repeat scroll 0% 0% #C1392B !important;
     background-color:  #C1392B !important;
@@ -73,6 +99,7 @@ h1, h3{
 }
 
 #ui-btn-c{
+    text-shadow: 3px 3px 2px #000 !important;
     border: 1px solid #DBA901;
     background: none repeat scroll 0% 0% #DBA901;
     font-weight: bold;
@@ -81,6 +108,7 @@ h1, h3{
 }
 
 #ui-btn-e{
+    text-shadow: 3px 3px 2px #000 !important;
     border: 1px solid #0B610B;
     background: none repeat scroll 0% 0% #0B610B;
     font-weight: bold;
