@@ -24,16 +24,10 @@
                          
                         <!--a data-icon="grid" data-theme="a" data-role="button" href="#unidades">Unidades académicas</a-->
                         <div class="separar-bot"><a data-role="button" id="ui-btn-d" class="ui-btn  ui-corner-all" data-icon="info" href="#buscar_carrera" >Buscar Carrera</a></div>
-                        <!--a data-icon="flat-time" data-theme="f" href="#institucional"  data-role="button">Institucional</a-->
-
-
+                        <div class="separar-bot"><a id="ui-btn-f" href="#institucional"  data-role="button">Institucional</a></div>
 
                         <div class="separar-bot"><a id="ui-btn-c" href="#contact"  data-role="button">Contacto</a></div>
                         <a id="ui-btn-e" href="#about-page"  data-role="button" >Acerca de</a>
-
-
-
-
                     </div>
                 </div>
                 <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
@@ -79,22 +73,36 @@
             <div  id="institucional" data-role="page">
                 <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" ></a>
-                    <h1>Institucional</h1>
+                     <div id="logoContainer" class="centerText">
+                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                    </div>  
                 </div>
                 <div data-role="content"  class="big-text">
-                    <a data-shadow="true" data-icon="ui-icon-unco" href="#institucionalHistoria" data-role="button">Historia</a>
-                    <a data-shadow="true" data-icon="ui-icon-unco" href="#institucionalAutoridades" data-role="button">Autoridades</a>
-                    <a data-shadow="true" data-icon="ui-icon-unco" href="#" data-role="button">Áreas de gestión</a>
-                    <a data-shadow="true" data-icon="ui-icon-unco" href="#" data-role="button">Decanos</a>
-                    <a data-shadow="true" data-icon="ui-icon-unco" href="#" data-role="button">Consejo superior</a>
+                    <div class="separar-bot"><a id="ui-btn-d" data-shadow="true"  href="#institucionalHistoria" data-role="button">Historia</a></div>
+                    <div class="separar-bot"><a id="ui-btn-f" data-shadow="true"  href="#rector" data-role="button">Nuestro rector</a></div>
+                    <div class="separar-bot"><a id="ui-btn-c" data-shadow="true"  href="#becas" data-role="button">Becas</a></div>
+                    <div class="separar-bot"><a id="ui-btn-g" data-shadow="true"  href="#inscripciones" data-role="button">Inscripciones</a></div>
+                    <div class="separar-bot"><a id="ui-btn-e" data-shadow="true"  href="http://www.radiouncocalf.com.ar/" data-role="button">Radio UNCO calf</a></div>
+<!--                    <a data-shadow="true" data-icon="ui-icon-unco" href="#" data-role="button">Consejo superior</a>
                     <a data-shadow="true" data-icon="ui-icon-unco" href="#" data-role="button">Organizaciones</a>
-                    <a data-shadow="true" data-icon="ui-icon-unco" href="#" data-role="button">Localización de la universidad</a>
+                    <a data-shadow="true" data-icon="ui-icon-unco" href="#" data-role="button">Localización de la universidad</a>-->
+                </div>
+                <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
+                    <div id="navbar" data-role="navbar">
+                        <ul>
+                            <li><!--a id="sponsor1" onclick="navigator.app.loadUrl('http://www.ypf.com', { openExternal:true });" ><img src="img/ypf.jpeg" id="ypf" class="sponsor" /></a--></li>
+                            <li><a id="sponsor2" class="blue" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
+                            <li><!--a id="sponsor3" class="blue" href="#search-page" ></a--></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div  id="institucionalHistoria" data-role="page">
                 <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
-                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-inline="true" >Volver</a>
-                    <h1>Nuestra historia</h1>
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext"></a>
+                    <div id="logoContainer" class="centerText">
+                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                    </div>
                 </div>
                 <div data-role="content"  class="big-text">
                     <p align="left"><strong>La Universidad de Neuqu&eacute;n</strong></p>
@@ -111,6 +119,65 @@
                     <p align="left"> La Universidad est&aacute;   f&iacute;sicamente asentada en dos territorios con historias equivalentes,   configurados en una sola unidad humana, social y cultural. </p>
                 </div>
             </div>
+            <div id="becas"  data-role="page">
+                <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" ></a>
+                     <div id="logoContainer" class="centerText">
+                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                    </div>  
+                </div>
+            </div>
+            <div id="inscripciones"  data-role="page">
+                <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" ></a>
+                     <div id="logoContainer" class="centerText">
+                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                    </div>  
+                </div>
+                <div data-role="content">
+                    <p><strong>La documentaci&oacute;n a presentar:</strong></p>
+                    <p align="justify">a) Formulario impreso de preinscripci&oacute;n o en su defecto el n&uacute;mero de c&oacute;digos de barras.</p>
+                    <p align="justify">b) Dos (2) fotocopias autenticadas del t&iacute;tulo Secundario.<br>Si a&uacute;n no tiene el t&iacute;tulo, puede presentar la &quot;Constancia de   Finalizaci&oacute;nde Estudios&quot; (original y fotocopia) &oacute; &quot;Constancia de T&iacute;tulo   en Tr&aacute;mite&quot; (original y fotocopia) (&bull;)</p>
+                    <p align="justify">c) Dos (2) fotocopias autenticadas del Documento de Identidad (inclu&iacute;da la hoja de renovaci&oacute;n y domicilio actualizado). (&bull;)</p>
+                    <p align="justify">d) Dos (2) fotograf&iacute;as de 3x3 cm de frente (con el nombre y apellido al dorso).</p>
+                    <p align="justify">f) Dos (2) fotocopias del acta de nacimiento (requisito s&oacute;lo para la facultad de ciencias de la educaci&oacute;n). <br></p>
+                    <p align="justify">(&bull;) La Universidad autentica las fotocopias presentando los Originales </p>
+                    <p align="justify"><strong>IMPORTANTE</strong>: Si presenta   constancia de finalizaci&oacute;n de estudios, debe figurar claramente en   nombre completo del t&iacute;tulo obtenido. Por Ej: &quot;Perito Mercantil con   Orientaci&oacute;n en PC&quot;.</p>
+                    <p align="justify">El <strong>Ingresante 2016</strong> deber&aacute; realizar la Inscripci&oacute;n definitiva en las <strong>Oficinas de Alumnos</strong>, seg&uacute;n el siguiente detalle.</p>
+                    <p align="justify">Los Ingresantes Extranjeros deber&aacute;n realizar el tr&aacute;mite en la Direcci&oacute;n de Inscripciones y Legajos, Sede Central, Buenos Aires 1400, Neuqu&eacute;n Capital.</p>
+                    <p align="justify">Los Mayores de 25 a&ntilde;os, que aprobaron los cursos para el Ingreso a la UNCOMA, deber&aacute;n realizar   la inscripci&oacute;n en la Direcci&oacute;n de Inscripciones y Legajos, Sede Central,   Buenos Aires 1400, Neuqu&eacute;n Capital.</p>
+                    <p align="justify">&nbsp;</p>
+                </div>
+                <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
+                    <div id="navbar" data-role="navbar">
+                        <ul>
+                            <li><!--a id="sponsor1" onclick="navigator.app.loadUrl('http://www.ypf.com', { openExternal:true });" ><img src="img/ypf.jpeg" id="ypf" class="sponsor" /></a--></li>
+                            <li><a id="sponsor2" class="blue" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
+                            <li><!--a id="sponsor3" class="blue" href="#search-page" ></a--></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="rector"  data-role="page">
+                <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" ></a>
+                     <div id="logoContainer" class="centerText">
+                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                    </div>  
+                </div>
+                <div data-role="content">
+                    
+                </div>
+                <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
+                    <div id="navbar" data-role="navbar">
+                        <ul>
+                            <li><!--a id="sponsor1" onclick="navigator.app.loadUrl('http://www.ypf.com', { openExternal:true });" ><img src="img/ypf.jpeg" id="ypf" class="sponsor" /></a--></li>
+                            <li><a id="sponsor2" class="blue" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
+                            <li><!--a id="sponsor3" class="blue" href="#search-page" ></a--></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -124,8 +191,8 @@
                 </div>
                 <div data-role="content"  class="big-text">
                     <b>COMAHUE NUESTRA UNIVERSIDAD</b> es la APP de la Universidad Nacional del Comahue. Su puesta en marcha surge de un convenio entre la Fundación de la Universidad Nacional del Comahue para el Desarrollo  Regional con la Facultad de Informática, con el apoyo de la Subsecretaría de  Tecnologías de la Información. 
-Se desarrolla por el trabajo conjunto de trabajadores técnicos, docentes y administrativos de Nuestra Casa y con el objetivo de ser una fuente de información útil y un canal de comunicación para toda la comunidad
-                    <p>Toda la información ha sido generada por profesionales, docentes y no docentes pertenecientes a la Universidad.</p>
+Se desarrolla por el trabajo conjunto de trabajadores técnicos, docentes y administrativos de Nuestra Casa y con el objetivo de ser una fuente de información útil y un canal de comunicación para toda la comunidad.
+                    
                     <p>Equipo desarrollo: S. Soto, G.Moyano, G. Michelan, M. Salazar.</p>
                     <p>Los fuentes se pueden encontrar en https://github.com/gmichelan/Comahue_nuestraUniversidad</p>
 
@@ -151,7 +218,7 @@ Se desarrolla por el trabajo conjunto de trabajadores técnicos, docentes y admi
         <script type="text/javascript" src="libs/jQueryMobile/jquery.mobile-1.4.3.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         
-     <div  id="buscar_carrera" data-role="page">
+            <div id="buscar_carrera" data-role="page">
                 <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext"></a>
                     

@@ -67,7 +67,7 @@ h1, h3{
     font-weight:bold;
     border:#000;
 }
-#home-page,#buscar_carrera,#about-page,#contact{
+#home-page,#buscar_carrera,#about-page,#contact, #institucional{
     background:url("../img/BackgroundComahueNuestraUniversidad.png") no-repeat center center fixed;
       -webkit-background-size: cover;          
       -moz-background-size: cover;         
@@ -116,6 +116,25 @@ h1, h3{
     /*height: 40px;*/
    
 }
+
+#ui-btn-f{
+    text-shadow: 3px 3px 2px #000 !important;
+    border: 1px solid #0B0B61;
+    background: none repeat scroll 0% 0% #0B0B61;
+    font-weight: bold;
+    color: #FFFFFF;
+/*    height: 40px;*/
+}
+
+#ui-btn-g{
+    text-shadow: 3px 3px 2px #000 !important;
+    border: 1px solid  #04B486;
+    background: none repeat scroll 0% 0%  #04B486;
+    font-weight: bold;
+    color: #FFFFFF;
+/*    height: 40px;*/
+}
+
 #footer{
     background-color:#0B0B61 ;
 }
