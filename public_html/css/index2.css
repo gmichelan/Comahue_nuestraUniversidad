@@ -2,6 +2,10 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
+.imagen{
+    margin-left: 3px !important;
+}
+
 .separar-bot{
     padding-bottom: 10px;
 }
