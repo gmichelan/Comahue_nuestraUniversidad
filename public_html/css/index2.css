@@ -13,7 +13,22 @@
 .separar-top{
     padding-top: 10px;
 }
+.custom-centercollheader3 a {
+    text-shadow: 3px 3px 2px #000 !important;
+    text-align: center !important;
+    color: white !important;
+    background-color: #0B0B61 !important;
+    border-color: #0B0B61 !important;
+   
+}
 
+.custom-centercollheaderr3 a {
+    text-shadow: 3px 3px 2px #000 !important;
+    color: white !important;
+    background-color: #0B0B61 !important;
+    border-color: #000 !important;
+   
+}
 .custom-centercollheader a {
     text-shadow: 3px 3px 2px #000 !important;
     text-align: center !important;
@@ -46,6 +61,8 @@
     border-color: #000 !important;
    
 }
+
+
 
 .centerText{
     text-align:center;
@@ -89,6 +106,17 @@ h1, h3{
     
 
 }
+
+#ui-btn-h{
+    text-shadow: 3px 3px 2px #000 !important;
+    border: 1px solid  #8904B1;
+    background: none repeat scroll 0% 0%  #8904B1 !important;
+    font-weight: bold;
+    color: #FFFFFF;
+/*    height: 40px;*/
+}
+
+
 #ui-btn-d{
     text-shadow: 3px 3px 2px #000 !important;
     border: 1px solid #C1392B;
@@ -138,6 +166,8 @@ h1, h3{
     color: #FFFFFF;
 /*    height: 40px;*/
 }
+
+
 
 #footer{
     background-color:#0B0B61 ;
