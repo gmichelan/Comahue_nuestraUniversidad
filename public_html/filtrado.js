@@ -1,4 +1,6 @@
-      $(document).on("pageshow","#buscar_carrera_nombre" ,function(){
+
+      $(document).on("pageshow","#buscar_carrera_nombre",function(){
+          
         var variables=$(location).attr('search');
         var arrVar=variables.split("=");
         console.log(arrVar[1]);
