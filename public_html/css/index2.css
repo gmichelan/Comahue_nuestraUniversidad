@@ -7,11 +7,11 @@
 }
 
 .separar-bot{
-    padding-bottom: 10px;
+    padding-bottom: 10px !important;
 }
 
 .separar-top{
-    padding-top: 10px;
+    padding-top: 10px !important;
 }
 
 .custom-centercollheaderr4 a {
@@ -30,8 +30,6 @@
     border-color: #04B486 !important;
    
 }
-
-
 
 .custom-centercollheader3 a {
     text-shadow: 3px 3px 2px #000 !important;
@@ -85,8 +83,6 @@
    
 }
 
-
-
 .centerText{
     text-align:center;
 }
@@ -132,68 +128,42 @@ h1, h3{
 .sponsor{
     width:70%;
     max-width:206px;
-    
-
 }
 
-#ui-btn-h{
+.boton{
     text-shadow: 3px 3px 2px #000 !important;
-    border: 1px solid  #8904B1;
+    font-weight: bold !important;
+    color: #FFFFFF !important;
+}
+
+.botonRojo{
+    border: 1px solid #C1392B !important;
+    background: none repeat scroll 0% 0%  #C1392B !important;
+}
+
+.botonVioleta{
+    border: 1px solid  #8904B1 !important;
     background: none repeat scroll 0% 0%  #8904B1 !important;
-    font-weight: bold;
-    color: #FFFFFF;
-/*    height: 40px;*/
 }
 
-
-#ui-btn-d{
-    text-shadow: 3px 3px 2px #000 !important;
-    border: 1px solid #C1392B;
-    //background: none repeat scroll 0% 0% #C1392B !important;
-    background-color:  #C1392B !important;
-    font-weight: bold;
-    color: #FFFFFF;
-    /*height: 40px;*/
-    text-align: center;
-    vertical-align: middle;
-    text-shadow: 2px 2px 4px #black;
+.botonAmarillo{
+    border: 1px solid #DBA901 !important;
+    background: none repeat scroll 0% 0% #DBA901 !important;
 }
 
-#ui-btn-c{
-    text-shadow: 3px 3px 2px #000 !important;
-    border: 1px solid #DBA901;
-    background: none repeat scroll 0% 0% #DBA901;
-    font-weight: bold;
-    color: #FFFFFF;
-/*    height: 40px;*/
+.botonVerde{
+    border: 1px solid #0B610B !important;
+    background: none repeat scroll 0% 0% #0B610B !important;   
 }
 
-#ui-btn-e{
-    text-shadow: 3px 3px 2px #000 !important;
-    border: 1px solid #0B610B;
-    background: none repeat scroll 0% 0% #0B610B;
-    font-weight: bold;
-    color: #FFFFFF;
-    /*height: 40px;*/
-   
+.botonAzul{
+    border: 1px solid #0B0B61 !important;
+    background: none repeat scroll 0% 0% #0B0B61 !important;
 }
 
-#ui-btn-f{
-    text-shadow: 3px 3px 2px #000 !important;
-    border: 1px solid #0B0B61;
-    background: none repeat scroll 0% 0% #0B0B61;
-    font-weight: bold;
-    color: #FFFFFF;
-/*    height: 40px;*/
-}
-
-#ui-btn-g{
-    text-shadow: 3px 3px 2px #000 !important;
-    border: 1px solid  #04B486;
-    background: none repeat scroll 0% 0%  #04B486;
-    font-weight: bold;
-    color: #FFFFFF;
-/*    height: 40px;*/
+.botonEsmeralda{
+    border: 1px solid  #04B486 !important;
+    background: none repeat scroll 0% 0%  #04B486 !important;
 }
 
 #footer1{
