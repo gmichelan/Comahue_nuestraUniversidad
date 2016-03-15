@@ -7,10 +7,10 @@
 
         <link rel="stylesheet" type="text/css" href="css/index2.css" />
         <link rel="stylesheet"  href="libs/jQueryMobile/jquery.mobile-1.4.3.min.css">
-        
-<!--      <link rel="stylesheet"  href="libs/jQM-flat/jquery.mobile.flatui.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css" />-->
-        
+
+        <!--      <link rel="stylesheet"  href="libs/jQM-flat/jquery.mobile.flatui.css">
+                <link rel="stylesheet" type="text/css" href="css/index.css" />-->
+
         <title>Comahue Nuestra Universidad</title>
     </head>
     <body>
@@ -24,15 +24,15 @@
                         <!--a data-icon="grid" data-theme="a" data-role="button" href="#unidades">Unidades académicas</a-->
                         <div class="separar-bot"><a data-role="button" class="boton botonRojo"  href="#buscar_carrera" >Buscar Carrera</a></div>
                         <div class="separar-bot"><a class="boton botonInscripcion" data-shadow="true"  href="#inscripciones" data-role="button">Inscripciones 2016</a></div>
-                        <div class="separar-bot"><a class="boton botonAzul" href="#institucional"  data-role="button" >Novedades</a></div>
+<!--                        <div class="separar-bot"><a class="boton botonAzul" href="#news"  data-role="button" onclick="mostrarNovedades()" >Novedades</a></div>-->
                         <div class="separar-bot"><a class="boton botonAzul" href="#institucional"  data-role="button" >Institucional</a></div>
                         <div class="separar-bot"><a class="boton botonAmarillo" href="#contact"  data-role="button" >Contacto</a></div>
-                        
+
                         <div class="separar-bot"><a class="boton botonAnaranjado" href="http://pedco.fi.uncoma.edu.ar/"  data-role="button" >PEDCO</a></div>
                         <div class="separar-bot"><a class="boton botonVioleta" data-shadow="true"  href="http://www.radiouncocalf.com.ar/" data-role="button" >Radio UNCO calf</a></div>
                         <div class="separar-bot"><a class="boton botonEsmeralda" data-shadow="true"  href="http://prensa.uncoma.edu.ar/index.php/es/" data-role="button">Prensa UNCO</a></div>
                         <div class="separar-bot"><a class="boton botonVerde" href="#about-page"  data-role="button">Acerca de</a></div>
-                        
+
                     </div>
                 </div>
                 <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
@@ -45,11 +45,10 @@
                     </div>
                 </div>
             </div>
-         
             <div  id="contact" data-role="page">
                 <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext"></a>
-                    
+
                     <div id="logoContainer" class="centerText">
                         <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
                     </div>                     
@@ -58,7 +57,7 @@
                     <h3>Datos de ubicación y contacto</h3>
 <h4>Edificio central UNCo</h4>
                <p>Dirección: Buenos Aires 1400<br>                
-               Localidad: Neuquén Capital<br>
+               Localidad: Neuquén Capital - <a onclick="vermapa(-38.939976, -68.057213 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
                Zona: Patagonia Argentina<br>
                Tel: 54-299-4490300<br>
                Código postal: Q8300IBX<br>
@@ -66,109 +65,119 @@
 <h4>Asentamiento Universitario San Martín de los Andes</h4>
                    <p>Dirección: Pasaje de la Paz 235<br> 
                    Tel.: (294) - 427618<br>
-                   Localidad: San Martín de los Andes<br>
+                   Localidad: San Martín de los Andes - <a onclick="vermapa(-7.13596e+06 ,-4.01571e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
                    E-mail: secretaria.academica@ausma.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://ausmaweb.uncoma.edu.ar/, {openExternal: true});">http://ausmaweb.uncoma.edu.ar/</a></p><br>
 <h4>Asentamiento Universitario Zapala</h4>
                    <p>Dirección: Av. 12 de julio y Rahue<br> 
                    Tel.: (2942) - 421847<br>
-                   Localidad: Zapala<br>
-                   E-mail: <br>Página web: <a onclick="navigator.app.loadUrl('http://auzaweb.uncoma.edu.ar, {openExternal: true});">http://auzaweb.uncoma.edu.ar</a></p><br>
+                   Localidad: Zapala - <a onclick="vermapa(-7.00729e+06 ,-3.89018e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: secretaria.academica@auza.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://auzaweb.uncoma.edu.ar, {openExternal: true});">http://auzaweb.uncoma.edu.ar</a></p><br>
 <h4>Centro Regional Universitario Bariloche</h4>
                    <p>Dirección: Quintral S/N Barrio Jardín Botánico<br> 
                    Tel.: (294) - 423374<br>
-                   Localidad: San Carlos de Bariloche<br>
-                   E-mail: <br>Página web: <a onclick="navigator.app.loadUrl('http://crubweb.uncoma.edu.ar, {openExternal: true});">http://crubweb.uncoma.edu.ar</a></p><br>
+                   Localidad: San Carlos de Bariloche - <a onclick="vermapa(-7.13165e+06 ,-411449 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: secretaria.academica@crub.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://crubweb.uncoma.edu.ar, {openExternal: true});">http://crubweb.uncoma.edu.ar</a></p><br>
 <h4>Centro Universitario Regional Zona Atlántica</h4>
                    <p>Dirección: Monseñor Esandi y Ayacucho<br> 
                    Tel.: (2920) - 422921<br>
-                   Localidad: Viedma<br>
-                   E-mail: despacho.curza@yahoo.com.ar<br>Página web: <a onclick="navigator.app.loadUrl(', {openExternal: true});"></a></p><br>
+                   Localidad: Viedma - <a onclick="vermapa(-6.30097e+06 ,-4.08056e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: constanza.ginestet@curza.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://www.curza.net/cms/, {openExternal: true});">http://www.curza.net/cms/</a></p><br>
 <h4>Escuela Superior de Ciencias Marinas</h4>
                    <p>Dirección: San Martín 247<br> 
                    Tel.: (2934) - 422752<br>
-                   Localidad: San Antonio Oeste<br>
+                   Localidad: San Antonio Oeste - <a onclick="vermapa(-6.49352e+06 ,-4.07285e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
                    E-mail: dpto.alumnos@ibmpas.org<br>Página web: <a onclick="navigator.app.loadUrl(', {openExternal: true});"></a></p><br>
 <h4>Facultad de Ciencias Agrarias</h4>
                    <p>Dirección: Ruta 151 Km 12,5<br> 
                    Tel.: (299) - 4980005<br>
-                   Localidad: Cinco Saltos<br>
-                   E-mail: <br>Página web: <a onclick="navigator.app.loadUrl(', {openExternal: true});"></a></p><br>
+                   Localidad: Cinco Saltos - <a onclick="vermapa(-6.80692e+06 ,-388446 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: secretaria.academica@faca.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://facaweb.uncoma.edu.ar/, {openExternal: true});">http://facaweb.uncoma.edu.ar/</a></p><br>
 <h4>Facultad de Ciencias de la Educación</h4>
                    <p>Dirección: Yrigoyen 2000<br> 
                    Tel.: (299) - 4781429<br>
-                   Localidad: Cipolletti<br>
-                   E-mail: <br>Página web: <a onclick="navigator.app.loadUrl('http://faceweb.uncoma.edu.ar/, {openExternal: true});">http://faceweb.uncoma.edu.ar/</a></p><br>
+                   Localidad: Cipolletti - <a onclick="vermapa(-6.79701e+06 ,-389422 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: orientacion@face.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://faceweb.uncoma.edu.ar/, {openExternal: true});">http://faceweb.uncoma.edu.ar/</a></p><br>
 <h4>Facultad de Ciencias del Ambiente y la Salud</h4>
-                   <p>Dirección: Pacheco 460 - Edificio Pto. Moreno<br> 
-                   Tel.: (2946) - 443153<br>
-                   Localidad: Choele Choel<br>
-                   E-mail: departamento.alumnos@facias.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://www.faciasuncoma.com, {openExternal: true});">http://www.faciasuncoma.com</a></p><br>
+                   <p>Dirección: 9 de Julio 102<br> 
+                   Tel.: (2945) - 280438543<br>
+                   Localidad: Esquel - <a onclick="vermapa( , , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: departamento.alumnos@facias.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://faciasweb.uncoma.edu.ar/, {openExternal: true});">http://faciasweb.uncoma.edu.ar/</a></p><br>
+<h4>Facultad de Ciencias del Ambiente y la Salud</h4>
+                   <p>Dirección: Avda. Roca 743<br> 
+                   Tel.: (298) - <br>
+                   Localidad: Puerto Madryn - <a onclick="vermapa( , , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: departamento.alumnos@facias.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://faciasweb.uncoma.edu.ar/, {openExternal: true});">http://faciasweb.uncoma.edu.ar/</a></p><br>
 <h4>Facultad de Ciencias del Ambiente y la Salud</h4>
                    <p>Dirección: Buenos Aires 1400<br> 
                    Tel.: (299) - 4490375<br>
-                   Localidad: Neuquén Capital<br>
-                   E-mail: departamento.alumnos@facias.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://www.faciasuncoma.com, {openExternal: true});">http://www.faciasuncoma.com</a></p><br>
+                   Localidad: Neuquén Capital - <a onclick="vermapa(3.85627e+07 ,6.83292e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: departamento.alumnos@facias.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://faciasweb.uncoma.edu.ar/, {openExternal: true});">http://faciasweb.uncoma.edu.ar/</a></p><br>
+<h4>Facultad de Ciencias del Ambiente y la Salud</h4>
+                   <p>Dirección: Pacheco 460 - Edificio Pto. Moreno<br> 
+                   Tel.: (2946) - 443153<br>
+                   Localidad: Choele Choel - <a onclick="vermapa( , , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: departamento.alumnos@facias.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://faciasweb.uncoma.edu.ar/, {openExternal: true});">http://faciasweb.uncoma.edu.ar/</a></p><br>
 <h4>Facultad de Ciencias del Ambiente y la Salud</h4>
                    <p>Dirección: Güemes y Einstein<br> 
                    Tel.: (298) - 4450162<br>
-                   Localidad: Allen<br>
-                   E-mail: departamento.alumnos@facias.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://www.faciasuncoma.com, {openExternal: true});">http://www.faciasuncoma.com</a></p><br>
-<h4>Facultad de Ciencias del Ambiente y la Salud</h4>
-                   <p>Dirección: 9 de Julio 1021<br> 
-                   Tel.: (2945) - 455190<br>
-                   Localidad: Esquel<br>
-                   E-mail: departamento.alumnos@facias.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://www.faciasuncoma.com, {openExternal: true});">http://www.faciasuncoma.com</a></p><br>
-<h4>Facultad de Ciencias del Ambiente y la Salud</h4>
-                   <p>Dirección: Avda. Roca 743<br> 
-                   Tel.: (298) - 4454755<br>
-                   Localidad: Puerto Madryn<br>
-                   E-mail: departamento.alumnos@facias.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://www.faciasuncoma.com, {openExternal: true});">http://www.faciasuncoma.com</a></p><br>
+                   Localidad: Allen - <a onclick="vermapa( , , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: departamento.alumnos@facias.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://faciasweb.uncoma.edu.ar/, {openExternal: true});">http://faciasweb.uncoma.edu.ar/</a></p><br>
 <h4>Facultad de Ciencias Médicas</h4>
                    <p>Dirección: Av. Luis Toschi y Los Arrayanes<br> 
                    Tel.: (299) - 4782603<br>
-                   Localidad: Cipolletti<br>
-                   E-mail: secretaria.academica@facimed.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('medicina.uncoma.edu.ar, {openExternal: true});">medicina.uncoma.edu.ar</a></p><br>
+                   Localidad: Cipolletti - <a onclick="vermapa(-6.79939e+06 ,-3.89504e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: secretaria.academica@facimed.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://medicina.uncoma.edu.ar/, {openExternal: true});">http://medicina.uncoma.edu.ar/</a></p><br>
 <h4>Facultad de Ciencias y Tecnologías de los Alimentos</h4>
                    <p>Dirección: 25 de Mayo y Reconquista<br> 
                    Tel.: (298) - 4463200<br>
-                   Localidad: Villa Regina<br>
-                   E-mail: direccion.academica@facta.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('factaweb.uncoma.edu.ar, {openExternal: true});">factaweb.uncoma.edu.ar</a></p><br>
+                   Localidad: Villa Regina - <a onclick="vermapa(-6.70846e+06 ,-3.90949e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: secretaria.academica@facta.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://factaweb.uncoma.edu.ar/, {openExternal: true});">http://factaweb.uncoma.edu.ar/</a></p><br>
+<h4>Facultad de Derecho y Ciencias Sociales</h4>
+                   <p>Dirección: Buenos Aires 1400<br> 
+                   Tel.: (299) - 4490300<br>
+                   Localidad: Neuquén Capital - <a onclick="vermapa(3.85627e+07 ,6.83305e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: noticias@fade.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://fadeweb.uncoma.edu.ar/, {openExternal: true});">http://fadeweb.uncoma.edu.ar/</a></p><br>
 <h4>Facultad de Derecho y Ciencias Sociales</h4>
                    <p>Dirección: Mendoza y Perú<br> 
                    Tel.: (298) - 4433670<br>
-                   Localidad: General Roca<br>
+                   Localidad: General Roca - <a onclick="vermapa(-675617 ,-3.90229e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
                    E-mail: noticias@fade.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://fadeweb.uncoma.edu.ar/, {openExternal: true});">http://fadeweb.uncoma.edu.ar/</a></p><br>
 <h4>Facultad de Economía y Administración</h4>
                    <p>Dirección: Buenos Aires 1400<br> 
                    Tel.: (299) - 4490300<br>
-                   Localidad: Neuquén Capital<br>
-                   E-mail: maria.porran@faea.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('www.faeaweb.uncoma.edu.ar, {openExternal: true});">www.faeaweb.uncoma.edu.ar</a></p><br>
+                   Localidad: Neuquén Capital - <a onclick="vermapa(3.85628e+07 ,6.83217e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: <br>Página web: <a onclick="navigator.app.loadUrl('www.faeaweb.uncoma.edu.ar, {openExternal: true});">www.faeaweb.uncoma.edu.ar</a></p><br>
 <h4>Facultad de Humanidades</h4>
                    <p>Dirección: Buenos Aires 1400<br> 
                    Tel.: (299) - 4490389<br>
-                   Localidad: Neuquén Capital<br>
-                   E-mail: <br>Página web: <a onclick="navigator.app.loadUrl('http://fahuweb.uncoma.edu.ar, {openExternal: true});">http://fahuweb.uncoma.edu.ar</a></p><br>
+                   Localidad: Neuquén Capital - <a onclick="vermapa(3.85626e+07 ,6.83287e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: secretaria.academica@fahu.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://fahuweb.uncoma.edu.ar, {openExternal: true});">http://fahuweb.uncoma.edu.ar</a></p><br>
 <h4>Facultad de Informática</h4>
                    <p>Dirección: Buenos Aires 1400<br> 
                    Tel.: (299) - 4490313<br>
-                   Localidad: Neuquén Capital<br>
-                   E-mail: <br>Página web: <a onclick="navigator.app.loadUrl('http://fai.uncoma.edu.ar, {openExternal: true});">http://fai.uncoma.edu.ar</a></p><br>
+                   Localidad: Neuquén Capital - <a onclick="vermapa( , , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: dpto.alumnos@fi.uncoma.eu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://fai.uncoma.edu.ar, {openExternal: true});">http://fai.uncoma.edu.ar</a></p><br>
 <h4>Facultad de Ingeniería</h4>
                    <p>Dirección: Buenos Aires 1400<br> 
                    Tel.: (299) - 4490368<br>
-                   Localidad: Neuquén Capital<br>
+                   Localidad: Neuquén Capital - <a onclick="vermapa(3.85627e+07 ,6.83231e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
+                   E-mail: <br>Página web: <a onclick="navigator.app.loadUrl('http://fainweb.uncoma.edu.ar, {openExternal: true});">http://fainweb.uncoma.edu.ar</a></p><br>
+<h4>Facultad de Ingeniería</h4>
+                   <p>Dirección: La Madrid 152<br> 
+                   Tel.: (2948) - 422517<br>
+                   Localidad: Chos Malal - <a onclick="vermapa( , , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
                    E-mail: <br>Página web: <a onclick="navigator.app.loadUrl('http://fainweb.uncoma.edu.ar, {openExternal: true});">http://fainweb.uncoma.edu.ar</a></p><br>
 <h4>Facultad de Lenguas</h4>
                    <p>Dirección: Mendoza y Perú<br> 
                    Tel.: (298) - 4422057<br>
-                   Localidad: General Roca<br>
+                   Localidad: General Roca - <a onclick="vermapa( , , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
                    E-mail: secretaria.academica@fadel.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('fadelweb.uncoma.edu.ar, {openExternal: true});">fadelweb.uncoma.edu.ar</a></p><br>
 <h4>Facultad de Turismo</h4>
                    <p>Dirección: Buenos Aires 1400<br> 
                    Tel.: (299) - 4490378<br>
-                   Localidad: Neuquén Capital<br>
+                   Localidad: Neuquén Capital - <a onclick="vermapa(3.85627e+07 ,6.83122e+06 , 'Edificio central UNCo', 'Buenos Aires 1400')">ver mapa</a><br><br>
                    E-mail: secretaria.academica@fatu.uncoma.edu.ar<br>Página web: <a onclick="navigator.app.loadUrl('http://fatuweb.uncoma.edu.ar/, {openExternal: true});">http://fatuweb.uncoma.edu.ar/</a></p><br>
-                    
+
                 </div>
                 <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
                     <div id="navbar" data-role="navbar">
@@ -180,60 +189,60 @@
                     </div>
                 </div>
             </div>
-             <!--LISTAR CArRERAS-->
+            <!--LISTAR CArRERAS-->
             <div id="buscar_carrera_nombre" data-role="page">
                 <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
-                <a href="#" data-rel="back"  data-role="button" data-icon="back" data-iconpos="notext"></a>
-                <div id="logoContainer" class="centerText">
-                    <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
-                </div>
-                <form id="formularioBuscar">
-                    <input data-type="search" id="divOfPs-input" placeholder="Nombre, Area, Sede, Años, Facultad">
-                </form>
+                    <a href="#" data-rel="back"  data-role="button" data-icon="back" data-iconpos="notext"></a>
+                    <div id="logoContainer" class="centerText">
+                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                    </div>
+                    <form id="formularioBuscar">
+                        <input data-type="search" id="divOfPs-input" placeholder="Nombre, Area, Sede, Años, Facultad">
+                    </form>
                 </div>
                 <div data-role="content">
                     <div class="elements" data-filter="true" data-input="#divOfPs-input">    
                         <p><a href="planes/ca434.html">ABOGACÍA</a><br>- Facultad de Derecho y Ciencias Sociales<br> - Comunicación y Derecho<br> - General Roca<br> - 5 años</p>
 <hr/><p><a href="planes/ca303.html">CICLO GENERAL EN CIENCIAS ECONÓMICAS</a><br>- Facultad de Economía y Administración<br> - Ciencias Económicas / Administración<br> - Neuquén Capital<br><hr/><p><a href="planes/ca301.html">CONTADOR PÚBLICO NACIONAL</a><br>- Facultad de Economía y Administración<br> - Ciencias Económicas / Administración<br> - Neuquén Capital<br> - 5 años</p>
+<hr/><p><a href="planes/ca446.html">DOCTORADO EN ENSEñANZA DE CIENCIAS EXACTAS Y NATURALES</a><br>- Facultad de Ingeniería<br> - Humanidades / Ciencias Sociales<br> - Neuquén Capital<br> - 4 años</p>
 <hr/><p><a href="planes/ca279.html">GUÍA UNIVERSITARIO EN TURISMO</a><br>- Facultad de Turismo<br> - Turismo / Deporte<br> - Neuquén Capital<br> - San Martín de los Andes<br> - 2.5 años</p>
 <hr/><p><a href="planes/ca420.html">INGENIERIA AGRONOMICA</a><br>- Facultad de Ciencias Agrarias<br> - Ciencias Agrarias<br> - Cinco Saltos<br> - 5.5 años</p>
-<hr/><p><a href="planes/ca245.html">INGENIERÍA CIVIL</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - 5 años</p>
-<hr/><p><a href="planes/ca242.html">INGENIERÍA ELÉCTRICA</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - 5 años</p>
-<hr/><p><a href="planes/ca243.html">INGENIERÍA ELECTRÓNICA</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - 5 años</p>
-<hr/><p><a href="planes/ca247.html">INGENIERÍA EN PETRÓLEO</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - 5 años</p>
-<hr/><p><a href="planes/ca244.html">INGENIERÍA MECÁNICA</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - 5 años</p>
-<hr/><p><a href="planes/ca246.html">INGENIERÍA QUÍMICA</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - 5 años</p>
+<hr/><p><a href="planes/ca245.html">INGENIERÍA CIVIL</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - Chos Malal<br> - 5 años</p>
+<hr/><p><a href="planes/ca242.html">INGENIERÍA ELÉCTRICA</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - Chos Malal<br> - 5 años</p>
+<hr/><p><a href="planes/ca243.html">INGENIERÍA ELECTRÓNICA</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - Chos Malal<br> - 5 años</p>
+<hr/><p><a href="planes/ca247.html">INGENIERÍA EN PETRÓLEO</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - Chos Malal<br> - 5 años</p>
+<hr/><p><a href="planes/ca244.html">INGENIERÍA MECÁNICA</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - Chos Malal<br> - 5 años</p>
+<hr/><p><a href="planes/ca246.html">INGENIERÍA QUÍMICA</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - Chos Malal<br> - 5 años</p>
+<hr/><p><a href="planes/ca448.html">LA MAESTRíA EN LINGüíSTICA APLICADA CON ORIENTACIóN ENSEñANZA DE LENGUAS EXTRANJERAS</a><br>- Facultad de Lenguas<br> - Humanidades / Ciencias Sociales<br> - General Roca<br> - 3 años</p>
 <hr/><p><a href="planes/ca302.html">LICENCIATURA EN ADMINISTRACIÓN</a><br>- Facultad de Economía y Administración<br> - Ciencias Económicas / Administración<br> - Neuquén Capital<br> - 5 años</p>
-<hr/><p><a href="planes/ca286.html">LICENCIATURA EN ADMINISTRACION PUBLICA</a><br>- Centro Universitario Regional Zona Atlántica<br> - Ciencias Económicas / Administración<br> - 4 años</p>
-<hr/><p><a href="planes/ca404.html">LICENCIATURA EN BIOLOGÍA MARINA</a><br>- Escuela Superior de Ciencias Marinas<br> - San Antonio Oeste<br> - 5 años</p>
+<hr/><p><a href="planes/ca286.html">LICENCIATURA EN ADMINISTRACION PUBLICA</a><br>- Centro Universitario Regional Zona Atlántica<br> - Ciencias Económicas / Administración<br> - Viedma<br> - 4 años</p>
+<hr/><p><a href="planes/ca404.html">LICENCIATURA EN BIOLOGÍA MARINA</a><br>- Escuela Superior de Ciencias Marinas<br> - Ciencias Biológicas / Naturaleza<br> - San Antonio Oeste<br> - 5 años</p>
 <hr/><p><a href="planes/ca287.html">LICENCIATURA EN CIENCIA POLITICA</a><br>- Centro Universitario Regional Zona Atlántica<br> - Humanidades / Ciencias Sociales<br> - Viedma<br> - 5 años</p>
 <hr/><p><a href="planes/ca398.html">LICENCIATURA EN CIENCIAS BIOLÓGICAS</a><br>- Centro Regional Universitario Bariloche<br> - Ciencias Biológicas / Naturaleza<br> - San Carlos de Bariloche<br> - 5 años</p>
 <hr/><p><a href="planes/ca233.html">LICENCIATURA EN CIENCIAS DE LA COMPUTACIÓN</a><br>- Facultad de Informática<br> - Informática<br> - Neuquén Capital<br> - 5 años</p>
 <hr/><p><a href="planes/ca255.html">LICENCIATURA EN CIENCIAS DE LA EDUCACION</a><br>- Facultad de Ciencias de la Educación<br> - Ciencias de la Educación / Pedagogía<br> - Cipolletti<br> - 5 años</p>
 <hr/><p><a href="planes/ca248.html">LICENCIATURA EN CIENCIAS GEOLÓGICAS</a><br>- Facultad de Ingeniería<br> - Ciencias Biológicas / Naturaleza<br> - Neuquén Capital<br> - 5 años</p>
-<hr/><p><a href="planes/ca442.html">LICENCIATURA EN COMUNICACIÓN SOCIAL CON MENCIÓN EN GESTIÓN Y PRODUCCIÓN</a><br>- Facultad de Derecho y Ciencias Sociales<br> - Comunicación y Derecho<br> - Ciencias de la Educación / Pedagogía<br> - 4 años</p>
-<hr/><p><a href="planes/ca441.html">LICENCIATURA EN COMUNICACIÓN SOCIAL CON MENCIÓN EN LOCUCIÓN</a><br>- Facultad de Derecho y Ciencias Sociales<br> - Comunicación y Derecho<br> - Ciencias de la Educación / Pedagogía<br> - General Roca<br> - 4 años</p>
-<hr/><p><a href="planes/ca440.html">LICENCIATURA EN COMUNICACIÓN SOCIAL CON MENCIÓN EN PERIODISMO</a><br>- Facultad de Derecho y Ciencias Sociales<br> - Comunicación y Derecho<br> - Ciencias de la Educación / Pedagogía<br> - General Roca<br> - 4 años</p>
+<hr/><p><a href="planes/ca441.html">LICENCIATURA EN COMUNICACIÓN SOCIAL</a><br>- Facultad de Derecho y Ciencias Sociales<br> - Comunicación y Derecho<br> - 4 años</p>
 <hr/><p><a href="planes/ca276.html">LICENCIATURA EN ENFERMERIA</a><br>- Facultad de Ciencias del Ambiente y la Salud<br> - Ciencias de la Salud<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - Viedma<br> - Allen<br> - Esquel<br> - Choele Choel<br> - Puerto Madryn<br> - 5 años</p>
 <hr/><p><a href="planes/ca418.html">LICENCIATURA EN FILOSOFÍA</a><br>- Facultad de Humanidades<br> - Humanidades / Ciencias Sociales<br> - Neuquén Capital<br> - 5 años</p>
 <hr/><p><a href="planes/ca419.html">LICENCIATURA EN GEOGRAFÍA</a><br>- Facultad de Humanidades<br> - Humanidades / Ciencias Sociales<br> - Neuquén Capital<br> - 5 años</p>
 <hr/><p><a href="planes/ca282.html">LICENCIATURA EN GERENCIAMIENTO GASTRONOMICO</a><br>- Facultad de Ciencias y Tecnologías de los Alimentos<br> - Ciencias Económicas / Administración<br> - Villa Regina<br> - 4 años</p>
 <hr/><p><a href="planes/ca290.html">LICENCIATURA EN GESTION DE EMPRESAS AGROPECUARIAS</a><br>- Centro Universitario Regional Zona Atlántica<br> - Ciencias Agrarias<br> - Viedma<br> - 5 años</p>
 <hr/><p><a href="planes/ca438.html">LICENCIATURA EN GESTIÓN DE RECURSOS HUMANOS</a><br>- Centro Universitario Regional Zona Atlántica<br> - Viedma<br> - 2 años</p>
-<hr/><p><a href="planes/ca432.html">LICENCIATURA EN HIGIENE Y SEGURIDAD EN EL TRABAJO</a><br>- Facultad de Ciencias del Ambiente y la Salud<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - 5 años</p>
+<hr/><p><a href="planes/ca432.html">LICENCIATURA EN HIGIENE Y SEGURIDAD EN EL TRABAJO (4TO Y 5TO CICLO)</a><br>- Facultad de Ciencias del Ambiente y la Salud<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - 2 años</p>
 <hr/><p><a href="planes/ca411.html">LICENCIATURA EN HISTORIA</a><br>- Centro Regional Universitario Bariloche<br> - Humanidades / Ciencias Sociales<br> - San Carlos de Bariloche<br> - 5 años</p>
 <hr/><p><a href="planes/ca421.html">LICENCIATURA EN HISTORIA</a><br>- Facultad de Humanidades<br> - Humanidades / Ciencias Sociales<br> - Neuquén Capital<br> - 5 años</p>
 <hr/><p><a href="planes/ca422.html">LICENCIATURA EN LETRAS</a><br>- Facultad de Humanidades<br> - Humanidades / Ciencias Sociales<br> - Neuquén Capital<br> - 5 años</p>
-<hr/><p><a href="planes/ca300.html">LICENCIATURA EN MATEMÁTICA</a><br>- Facultad de Economía y Administración<br> - Ciencias Económicas / Administración<br> - Neuquén Capital<br> - 5 años</p>
-<hr/><p><a href="planes/ca402.html">LICENCIATURA EN MATEMÁTICA</a><br>- Centro Regional Universitario Bariloche<br> - Ciencias Económicas / Administración<br> - San Carlos de Bariloche<br> - 4 años</p>
+<hr/><p><a href="planes/ca300.html">LICENCIATURA EN MATEMÁTICA</a><br>- Facultad de Economía y Administración<br> - Ciencias Económicas / Administración<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - 5 años</p>
 <hr/><p><a href="planes/ca292.html">LICENCIATURA EN PSICOPEDAGOGIA</a><br>- Centro Universitario Regional Zona Atlántica<br> - Ciencias de la Educación / Pedagogía<br> - Viedma<br> - 5 años</p>
 <hr/><p><a href="planes/ca433.html">LICENCIATURA EN SANEAMIENTO Y PROTECCIÓN AMBIENTAL</a><br>- Facultad de Ciencias del Ambiente y la Salud<br> - Ciencias Biológicas / Naturaleza<br> - Neuquén Capital<br> - 5 años</p>
-<hr/><p><a href="planes/ca443.html">LICENCIATURA EN SERVICIO SOCIAL</a><br>- Facultad de Derecho y Ciencias Sociales<br> - Humanidades / Ciencias Sociales<br> - General Roca<br> - 5 años</p>
+<hr/><p><a href="planes/ca443.html">LICENCIATURA EN SERVICIO SOCIAL</a><br>- Facultad de Derecho y Ciencias Sociales<br> - Humanidades / Ciencias Sociales<br> - General Roca<br> - Neuquén Capital<br> - 5 años</p>
 <hr/><p><a href="planes/ca285.html">LICENCIATURA EN SISTEMAS DE INFORMACIÓN</a><br>- Facultad de Informática<br> - Informática<br> - Neuquén Capital<br> - 5 años</p>
 <hr/><p><a href="planes/ca265.html">LICENCIATURA EN SOCIOLOGIA</a><br>- Facultad de Derecho y Ciencias Sociales<br> - Humanidades / Ciencias Sociales<br> - General Roca<br> - 5 años</p>
 <hr/><p><a href="planes/ca423.html">LICENCIATURA EN TECNOLOGIA DE LOS ALIMENTOS</a><br>- Facultad de Ciencias y Tecnologías de los Alimentos<br> - Ciencias Biológicas / Naturaleza<br> - Villa Regina<br> - 5 años</p>
 <hr/><p><a href="planes/ca391.html">LICENCIATURA EN TECNOLOGÍA MINERA</a><br>- Asentamiento Universitario Zapala<br> - Ciencias Biológicas / Naturaleza<br> - Zapala<br> - 5 años</p>
-<hr/><p><a href="planes/ca272.html">LICENCIATURA EN TURISMO</a><br>- Facultad de Turismo<br> - Turismo / Deporte<br> - 5 años</p>
+<hr/><p><a href="planes/ca272.html">LICENCIATURA EN TURISMO</a><br>- Facultad de Turismo<br> - Turismo / Deporte<br> - Neuquén Capital<br> - 5 años</p>
+<hr/><p><a href="planes/ca447.html">MAESTRíA EN LINGüíSTICA APLICADA</a><br>- Facultad de Lenguas<br> - Humanidades / Ciencias Sociales<br> - General Roca<br> - 3 años</p>
 <hr/><p><a href="planes/ca403.html">MEDICINA</a><br>- Facultad de Ciencias Médicas<br> - Ciencias de la Salud<br> - Cipolletti<br> - 7 años</p>
 <hr/><p><a href="planes/ca295.html">PROFESORADO EN CIENCIAS AGROPECUARIAS</a><br>- Centro Universitario Regional Zona Atlántica<br> - Ciencias Agrarias<br> - Ciencias de la Educación / Pedagogía<br> - Viedma<br> - 5 años</p>
 <hr/><p><a href="planes/ca397.html">PROFESORADO EN CIENCIAS BIOLÓGICAS</a><br>- Centro Regional Universitario Bariloche<br> - Ciencias Biológicas / Naturaleza<br> - San Carlos de Bariloche<br> - 4 años</p>
@@ -246,25 +255,23 @@
 <hr/><p><a href="planes/ca249.html">PROFESORADO EN FÍSICA</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Ciencias de la Educación / Pedagogía<br> - Neuquén Capital<br> - 3.5 años</p>
 <hr/><p><a href="planes/ca269.html">PROFESORADO EN GEOGRAFIA</a><br>- Facultad de Humanidades<br> - Ciencias de la Educación / Pedagogía<br> - Humanidades / Ciencias Sociales<br> - Neuquén Capital<br> - 4 años</p>
 <hr/><p><a href="planes/ca270.html">PROFESORADO EN HISTORIA</a><br>- Facultad de Humanidades<br> - Ciencias de la Educación / Pedagogía<br> - Humanidades / Ciencias Sociales<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - 5 años</p>
-<hr/><p><a href="planes/ca235.html">PROFESORADO EN INFORMÁTICA</a><br>- Facultad de Informática<br> - Informática<br> - Ciencias de la Educación / Pedagogía<br> - Neuquén Capital<br> - 4 años</p>
+<hr/><p><a href="planes/ca235.html">PROFESORADO EN INFORMÁTICA</a><br>- Facultad de Informática<br> - Ciencias de la Educación / Pedagogía<br> - Neuquén Capital<br> - 4 años</p>
 <hr/><p><a href="planes/ca266.html">PROFESORADO EN INGLES</a><br>- Facultad de Lenguas<br> - Idiomas Extranjeros<br> - General Roca<br> - 5 años</p>
-<hr/><p><a href="planes/ca291.html">PROFESORADO EN LENGUA Y COMUNICACION ORAL Y ESCRITA</a><br>- Centro Universitario Regional Zona Atlántica<br> - Ciencias de la Educación / Pedagogía<br> - Humanidades / Ciencias Sociales<br> - Viedma<br> - 4.5 años</p>
-<hr/><p><a href="planes/ca271.html">PROFESORADO EN LETRAS</a><br>- Facultad de Humanidades<br> - Ciencias de la Educación / Pedagogía<br> - Humanidades / Ciencias Sociales<br> - Neuquén Capital<br> - 4 años</p>
+<hr/><p><a href="planes/ca291.html">PROFESORADO EN LENGUA Y COMUNICACION ORAL Y ESCRITA</a><br>- Centro Universitario Regional Zona Atlántica<br> - Ciencias de la Educación / Pedagogía<br> - Viedma<br> - 4.5 años</p>
+<hr/><p><a href="planes/ca271.html">PROFESORADO EN LETRAS</a><br>- Facultad de Humanidades<br> - Ciencias de la Educación / Pedagogía<br> - Neuquén Capital<br> - 4 años</p>
 <hr/><p><a href="planes/ca252.html">PROFESORADO EN NIVEL INICIAL</a><br>- Facultad de Ciencias de la Educación<br> - Ciencias de la Educación / Pedagogía<br> - Cipolletti<br> - 3 años</p>
 <hr/><p><a href="planes/ca293.html">PROFESORADO EN PSICOPEDAGOGIA</a><br>- Centro Universitario Regional Zona Atlántica<br> - Ciencias de la Educación / Pedagogía<br> - Viedma<br> - 5 años</p>
-<hr/><p><a href="planes/ca274.html">PROFESORADO EN QUIMICA</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Ciencias de la Educación / Pedagogía<br> - Neuquén Capital<br> - 4 años</p>
+<hr/><p><a href="planes/ca274.html">PROFESORADO EN QUIMICA</a><br>- Facultad de Ingeniería<br> - Ciencias de la Educación / Pedagogía<br> - Neuquén Capital<br> - 4 años</p>
 <hr/><p><a href="planes/ca435.html">PROFESORADO UNIVERSITARIO EN CIENCIA POLÍTICA</a><br>- Centro Universitario Regional Zona Atlántica<br> - Viedma<br> - 5 años</p>
-<hr/><p><a href="planes/ca401.html">PROFESORADO UNIVERSITARIO EN MATEMÁTICA</a><br>- Centro Regional Universitario Bariloche<br> - Ciencias Económicas / Administración<br> - San Carlos de Bariloche<br> - 4 años</p>
-<hr/><p><a href="planes/ca283.html">PROFESORADO UNIVERSITARIO EN MATEMÁTICA</a><br>- Facultad de Economía y Administración<br> - Ciencias de la Educación / Pedagogía<br> - Ciencias Económicas / Administración<br> - Neuquén Capital<br> - 4 años</p>
+<hr/><p><a href="planes/ca283.html">PROFESORADO UNIVERSITARIO EN MATEMÁTICA</a><br>- Facultad de Economía y Administración<br> - Ciencias de la Educación / Pedagogía<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - 4 años</p>
 <hr/><p><a href="planes/ca307.html">PSICOLOGIA</a><br>- Facultad de Ciencias de la Educación<br> - Ciencias de la Salud<br> - Cipolletti<br> - 5 años</p>
-<hr/><p><a href="planes/ca416.html">TECNICATURA EN CONTROL E HIGIENE DE LOS ALIMENTOS</a><br>- Escuela Superior de Ciencias Marinas<br> - Ciencias Biológicas / Naturaleza<br> - San Antonio Oeste<br> - 3 años</p>
 <hr/><p><a href="planes/ca425.html">TECNICATURA EN CONTROL E HIGIENE DE LOS ALIMENTOS</a><br>- Facultad de Ciencias y Tecnologías de los Alimentos<br> - Ciencias Biológicas / Naturaleza<br> - Villa Regina<br> - 3 años</p>
 <hr/><p><a href="planes/ca278.html">TECNICATURA EN EMPRESAS DE SERVICIOS TURÍSTICOS</a><br>- Facultad de Turismo<br> - Turismo / Deporte<br> - Neuquén Capital<br> - 2.5 años</p>
 <hr/><p><a href="planes/ca426.html">TECNICATURA EN PLANIFICACION AMBIENTAL</a><br>- Facultad de Humanidades<br> - Ciencias Biológicas / Naturaleza<br> - Neuquén Capital<br> - 2.5 años</p>
 <hr/><p><a href="planes/ca390.html">TECNICATURA EN PLANTAS Y ANÁLISIS DE MENAS</a><br>- Asentamiento Universitario Zapala<br> - Ciencias Biológicas / Naturaleza<br> - Zapala<br> - 3 años</p>
 <hr/><p><a href="planes/ca414.html">TECNICATURA EN PRODUCCIÓN PESQUERA Y MARICULTURA</a><br>- Escuela Superior de Ciencias Marinas<br> - Ciencias Biológicas / Naturaleza<br> - San Antonio Oeste<br> - 2.5 años</p>
 <hr/><p><a href="planes/ca436.html">TECNICATURA SUPERIOR EN PRODUCCIÓN AGROPECUARIA</a><br>- Centro Universitario Regional Zona Atlántica<br> - Ciencias Agrarias<br> - Viedma<br> - 3 años</p>
-<hr/><p><a href="planes/ca238.html">TECNICATURA UNIVERSITARIA EN ADMINISTRACIÓN DE SISTEMAS Y SOFTWARE LIBRE</a><br>- Facultad de Informática<br> - Informática<br> - Neuquén Capital<br> - 2.5 años</p>
+<hr/><p><a href="planes/ca238.html">TECNICATURA UNIVERSITARIA EN ADMINISTRACIÓN DE SISTEMAS Y SOFTWARE LIBRE</a><br>- Facultad de Informática<br> - Informática<br> - Neuquén Capital<br> - Viedma<br> - 2.5 años</p>
 <hr/><p><a href="planes/ca296.html">TECNICATURA UNIVERSITARIA EN ADMINISTRACION PUBLICA</a><br>- Centro Universitario Regional Zona Atlántica<br> - Ciencias Económicas / Administración<br> - Viedma<br> - 3 años</p>
 <hr/><p><a href="planes/ca236.html">TECNICATURA UNIVERSITARIA EN DESARROLLO WEB</a><br>- Facultad de Informática<br> - Informática<br> - Neuquén Capital<br> - 2.5 años</p>
 <hr/><p><a href="planes/ca394.html">TECNICATURA UNIVERSITARIA EN ESPACIOS VERDES</a><br>- Asentamiento Universitario San Martín de los Andes<br> - Ciencias Agrarias<br> - San Martín de los Andes<br> - 3 años</p>
@@ -289,16 +296,16 @@
             <div  id="institucional" data-role="page">
                 <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" ></a>
-                     <div id="logoContainer" class="centerText">
+                    <div id="logoContainer" class="centerText">
                         <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
                     </div>  
                 </div>
                 <div data-role="content"  class="big-text">
-<!--                <div class="separar-bot"><a id="ui-btn-d" data-shadow="true"  href="#institucionalHistoria" data-role="button">Historia</a></div>
-                    <div class="separar-bot"><a id="ui-btn-f" data-shadow="true"  href="#rector" data-role="button">Nuestro rector</a></div>-->
+                    <!--                <div class="separar-bot"><a id="ui-btn-d" data-shadow="true"  href="#institucionalHistoria" data-role="button">Historia</a></div>
+                                        <div class="separar-bot"><a id="ui-btn-f" data-shadow="true"  href="#rector" data-role="button">Nuestro rector</a></div>-->
                     <div class="separar-bot"><a class="boton botonRojo" data-shadow="true"  href="#becas" data-role="button">Becas</a></div>
-<!--                    <div class="separar-bot"><a class="boton botonAzul" data-shadow="true"  href="#inscripciones" data-role="button">Inscripciones</a></div>-->
-                    
+                    <!--                    <div class="separar-bot"><a class="boton botonAzul" data-shadow="true"  href="#inscripciones" data-role="button">Inscripciones</a></div>-->
+
                 </div>
                 <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
                     <div id="navbar" data-role="navbar">
@@ -333,12 +340,12 @@
                     <p align="left"> La Universidad está   físicamente asentada en dos territorios con historias equivalentes,   configurados en una sola unidad humana, social y cultural. </p>
                 </div>
             </div>
-            
+
             <!--INSTITUCIONAL#####Boton BECAS-->
             <div id="becas"  data-role="page">
                 <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" ></a>
-                     <div id="logoContainer" class="centerText">
+                    <div id="logoContainer" class="centerText">
                         <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
                     </div>  
                 </div>
@@ -352,8 +359,8 @@
                     <br>
                     <h4><strong><u>Modalidad de Inscripción</u></strong></h4>
                     <p>La inscripción se realiza a través de una entrevista al alumno. Durante el mes de diciembre del corriente año y/o durante el mes de febrero del año siguiente. Para realizar la inscripción deberán solicitar turno en la Dirección de Becas o en la Unidad Académica más cercana a  su domicilio, a partir del 20 de noviembre del corriente año y durante el mes de febrero del año siguiente.</p>
-                        <br>
-                        <br>
+                    <br>
+                    <br>
                     <h4><strong><u>Requisitos para inscribirse al sistema de becas</u></strong></h4>
                     <div>
                         <ol>
@@ -378,7 +385,7 @@
                                 <li>Certificación negativa expedida por ANSES con fecha actualizada, para todos los integrantes del grupo familiar mayores de 18 años que no perciban ningún ingreso, incluido el alumno solicitante de beca. (www.anses.gob.ar/prestacion/certificacion-negativa-127)</li>
                             </ul>
                         </li>
-                    
+
                         <li>Vivienda del Alumno
                             <ul>
                                 <li>Alquilada: presentar fotocopia/s último/s recibo/s pago/s.</li>
@@ -415,32 +422,32 @@
             <div id="inscripciones"  data-role="page">
                 <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" ></a>
-                     <div id="logoContainer" class="centerText">
+                    <div id="logoContainer" class="centerText">
                         <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
                     </div>  
                 </div>
                 <div data-role="content">
                     <h2 style="text-align: center;">Ingresantes 2016</h2>
                     <p align="justify">La Secretar&iacute;a Acad&eacute;mica de la Universidad Nacional del Comahue informa que el pr&oacute;ximo <strong>miercoles 10 de febrero </strong>, se reabrir&aacute; el per&iacute;odo de preinscripci&oacute;n a las carreras para el<strong> Ingreso 2016</strong> de la Casa de Altos Estudios. Todos los ingresantes a la Carreras de la Universidad deber&aacute;n<strong> preinscribirse en forma Obligatoria</strong>.</p>
-          <p>Los ingresantes deber&aacute;n imprimir y completar el siguiente formulario para preinscribirse en esta Universidad: <a href="http://preinscripcion.uncoma.edu.ar/" target="_parent"><strong>Formulario de Preinscripci&oacute;n 2016</strong></a><br />
-          </p>
-            <strong>La documentaci&oacute;n a presentar:</strong></p>
-          <p>a) Formulario impreso de preinscripci&oacute;n o en su defecto el n&uacute;mero de c&oacute;digos de barras.</p>
-          <p>b) Dos (2) fotocopias autenticadas del t&iacute;tulo Secundario.<br />
-            Si a&uacute;n no tiene el t&iacute;tulo, puede presentar la &quot;Constancia de   Finalizaci&oacute;nde Estudios&quot; (original y fotocopia) &oacute; &quot;Constancia de T&iacute;tulo   en Tr&aacute;mite&quot; (original y fotocopia) (&bull;)</p>
-          <p>c) Dos (2) fotocopias autenticadas del Documento de Identidad (inclu&iacute;da la hoja de renovaci&oacute;n y domicilio actualizado). (&bull;)</p>
-          <p>d) Dos (2) fotograf&iacute;as de 3x3 cm de frente (con el nombre y apellido al dorso).</p>
-          <p>f) Dos (2) fotocopias del acta de nacimiento (requisito s&oacute;lo para la facultad de ciencias de la educaci&oacute;n). <br />
-          </p>
-          <p>(&bull;) La Universidad autentica las fotocopias presentando los Originales </p>
-          <p><strong>IMPORTANTE</strong>: Si presenta   constancia de finalizaci&oacute;n de estudios, debe figurar claramente en   nombre completo del t&iacute;tulo obtenido. Por Ej: &quot;Perito Mercantil con   Orientaci&oacute;n en PC&quot;.</p>
-          <p>El <strong>Ingresante 2016</strong> deber&aacute; realizar la Inscripci&oacute;n definitiva en las <strong>Oficinas de Alumnos</strong>, seg&uacute;n el siguiente detalle.</p>
-          <p>Los <strong>Ingresantes Extranjeros</strong> deber&aacute;n realizar el tr&aacute;mite en la Direcci&oacute;n de Inscripciones y Legajos, Sede Central, Buenos Aires 1400, Neuqu&eacute;n Capital.</p>
-          <p>Los<strong> Mayores de 25 a&ntilde;os</strong>,   que aprobaron los cursos para el Ingreso a la UNCOMA, deber&aacute;n realizar   la inscripci&oacute;n en la Direcci&oacute;n de Inscripciones y Legajos, Sede Central,   Buenos Aires 1400, Neuqu&eacute;n Capital.</p>
-          <hr />
-          <p align="center">Secretaria Acad&eacute;mica<br />
-            Email:&nbsp;secretaria.academica@central.uncoma.edu.ar<br />
-            Tel. +54 (0299) 4490230/259</p>
+                    <p>Los ingresantes deber&aacute;n imprimir y completar el siguiente formulario para preinscribirse en esta Universidad: <a href="http://preinscripcion.uncoma.edu.ar/" target="_parent"><strong>Formulario de Preinscripci&oacute;n 2016</strong></a><br />
+                    </p>
+                    <strong>La documentaci&oacute;n a presentar:</strong></p>
+                    <p>a) Formulario impreso de preinscripci&oacute;n o en su defecto el n&uacute;mero de c&oacute;digos de barras.</p>
+                    <p>b) Dos (2) fotocopias autenticadas del t&iacute;tulo Secundario.<br />
+                        Si a&uacute;n no tiene el t&iacute;tulo, puede presentar la &quot;Constancia de   Finalizaci&oacute;nde Estudios&quot; (original y fotocopia) &oacute; &quot;Constancia de T&iacute;tulo   en Tr&aacute;mite&quot; (original y fotocopia) (&bull;)</p>
+                    <p>c) Dos (2) fotocopias autenticadas del Documento de Identidad (inclu&iacute;da la hoja de renovaci&oacute;n y domicilio actualizado). (&bull;)</p>
+                    <p>d) Dos (2) fotograf&iacute;as de 3x3 cm de frente (con el nombre y apellido al dorso).</p>
+                    <p>f) Dos (2) fotocopias del acta de nacimiento (requisito s&oacute;lo para la facultad de ciencias de la educaci&oacute;n). <br />
+                    </p>
+                    <p>(&bull;) La Universidad autentica las fotocopias presentando los Originales </p>
+                    <p><strong>IMPORTANTE</strong>: Si presenta   constancia de finalizaci&oacute;n de estudios, debe figurar claramente en   nombre completo del t&iacute;tulo obtenido. Por Ej: &quot;Perito Mercantil con   Orientaci&oacute;n en PC&quot;.</p>
+                    <p>El <strong>Ingresante 2016</strong> deber&aacute; realizar la Inscripci&oacute;n definitiva en las <strong>Oficinas de Alumnos</strong>, seg&uacute;n el siguiente detalle.</p>
+                    <p>Los <strong>Ingresantes Extranjeros</strong> deber&aacute;n realizar el tr&aacute;mite en la Direcci&oacute;n de Inscripciones y Legajos, Sede Central, Buenos Aires 1400, Neuqu&eacute;n Capital.</p>
+                    <p>Los<strong> Mayores de 25 a&ntilde;os</strong>,   que aprobaron los cursos para el Ingreso a la UNCOMA, deber&aacute;n realizar   la inscripci&oacute;n en la Direcci&oacute;n de Inscripciones y Legajos, Sede Central,   Buenos Aires 1400, Neuqu&eacute;n Capital.</p>
+                    <hr />
+                    <p align="center">Secretaria Acad&eacute;mica<br />
+                        Email:&nbsp;secretaria.academica@central.uncoma.edu.ar<br />
+                        Tel. +54 (0299) 4490230/259</p>
                 </div>
                 <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
                     <div id="navbar" data-role="navbar">
@@ -456,12 +463,12 @@
             <div id="rector"  data-role="page">
                 <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" ></a>
-                     <div id="logoContainer" class="centerText">
+                    <div id="logoContainer" class="centerText">
                         <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
                     </div>  
                 </div>
                 <div data-role="content">
-                    
+
                 </div>
                 <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
                     <div id="navbar" data-role="navbar">
@@ -487,13 +494,42 @@
                     <p>Los fuentes se pueden encontrar en https://github.com/gmichelan/Comahue_nuestraUniversidad</p>
                     <div><img src="img/unc.png"/><img class="imagen" src="img/logofai.png"/><img class="imagen" src="img/isosubti.png"></div>
                     <div><img src="img/funyder.png"/><br>
-                    <h4>Aplicación todavía en desarrollo...</h4></div>
+                        <h4>Aplicación todavía en desarrollo...</h4></div>
                 </div>
                 <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
                     <div id="navbar" data-role="navbar">
                         <ul>
                             <li><!--a id="sponsor1" onclick="navigator.app.loadUrl('http://www.ypf.com', { openExternal:true });" ><img src="img/ypf.jpeg" id="ypf" class="sponsor" /></a--></li>
                             <li><a id="sponsor2" class="blue" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop/personas/promociones.html', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
+                            <li><!--a id="sponsor3" class="blue" href="#search-page" ></a--></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="muestramapa" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back"  data-role="button" data-icon="back" data-iconpos="notext"></a>
+                    <div id="logoContainer" class="centerText">
+                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                    </div>
+                </div>
+                <div data-role="content">
+                    <div id="antesmap">    
+                        <!-- este espacio es para mostrar el mapa -->
+                    </div>
+                    <div id="mostrarMapa" style="width: 450px; height: 350px;">    
+                        <!-- este espacio es para mostrar el mapa -->
+                    </div>
+                    <div id="despuesmap">    
+                        <!-- este espacio es para mostrar el mapa -->
+                    </div>
+
+                </div>
+                <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
+                    <div id="navbar" data-role="navbar">
+                        <ul>
+                            <li><!--a id="sponsor1" onclick="navigator.app.loadUrl('http://www.ypf.com', { openExternal:true });" ><img src="img/ypf.jpeg" id="ypf" class="sponsor" /></a--></li>
+                            <li><a id="sponsor2" class="blue" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
                             <li><!--a id="sponsor3" class="blue" href="#search-page" ></a--></li>
                         </ul>
                     </div>
@@ -517,7 +553,7 @@
                     <div class="separar-top" data-role="collapsible">
                         <h3 class="custom-centercollheader3">Área</h3>
                         <ul data-role="listview">
-<!--                            <li class="custom-centercollheaderr3"><a id="botonEcon" href="busquedaFiltro.html?carrera=econ">Ciencias Económicas<br/> Administración</a></li>-->
+                            <!--                            <li class="custom-centercollheaderr3"><a id="botonEcon" href="busquedaFiltro.html?carrera=econ">Ciencias Económicas<br/> Administración</a></li>-->
                             <li class="custom-centercollheaderr3"><a id="botonEcon" onclick="boton('econ')">Ciencias Económicas<br/> Administración</a></li>
                             <li class="custom-centercollheaderr3"><a id="botonAgrarias" onclick="boton('agrarias')">Ciencias Agrarias</a></li>
                             <li class="custom-centercollheaderr3"><a id="botonHumanidades" onclick="boton('humanidades')">Humanidades<br/>Ciencias Sociales</a></li>
@@ -534,9 +570,9 @@
                     <div class="separar-top" data-role="collapsible">
                         <h3 class="custom-centercollheader">Ubicación</h3>
                         <ul data-role="listview">
-                            <li class="custom-centercollheaderr"><a id="botonAllen" onclick="boton('allen')>Allen</a></li>
-                            <li class="custom-centercollheaderr"><a id="botonChoele" onclick="boton('choele')">Choele Choel</a></li>
-<!--                            <li class="custom-centercollheaderr"><a onclick="boton('malal')">Chos Malal</a></li>-->
+                            <li class="custom-centercollheaderr"><a id="botonAllen" onclick="boton('allen') > Allen < /a></li >
+                                                < li class ="custom-centercollheaderr"><a id="botonChoele" onclick="boton('choele')">Choele Choel</a></li>
+                            <!--<li class="custom-centercollheaderr"><a onclick="boton('malal')">Chos Malal</a></li>-->
                             <li class="custom-centercollheaderr"><a onclick="boton('cinco')">Cinco Saltos</a></li>
                             <li class="custom-centercollheaderr"><a onclick="boton('cipolletti')">Cipolletti</a></li>
                             <li class="custom-centercollheaderr"><a onclick="boton('esquel')">Esquel</a></li>
@@ -596,10 +632,34 @@
                     </div>
                 </div>
             </div>
-       
-        <script type='text/javascript' src="filtrado.js"></script>
-        <script type="text/javascript">
-                        app.initialize();
-        </script>
-             </body>
+            <div  id="news" data-role="page" >
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext"></a>
+
+                    <div id="logoContainer" class="centerText">
+                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                    </div>                     
+                </div>
+                <div data-role="content" id="novedadesId">
+
+                </div>
+                <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
+                    <div id="navbar" data-role="navbar">
+                        <ul>
+                            <li><!--a id="sponsor1" onclick="navigator.app.loadUrl('http://www.ypf.com', { openExternal:true });" ><img src="img/ypf.jpeg" id="ypf" class="sponsor" /></a--></li>
+                            <li><a id="sponsor2" class="blue" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop/personas/promociones.html', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
+                            <li><!--a id="sponsor3" class="blue" href="#search-page" ></a--></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="novedades.js"></script>
+            <script type='text/javascript' src="map.js"></script>
+            <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+            <script type='text/javascript' src="filtrado.js"></script>
+            <script type='text/javascript' src="gmaps.js"></script>
+            <script type="text/javascript">
+                                        app.initialize();
+            </script>
+                </body>
 </html>
