@@ -23,11 +23,12 @@ function vermapa2(latitud, longitud, nombre, direc){
         $("#divOfPs-input").val(""); 
         
         $("#formularioBuscar").hide();    
-        $.mobile.changePage("../#muestramapa", { transition: "slideup", changeHash: true, reload:true});
+        $.mobile.changePage("../index.html#muestramapa", { transition: "slideup", changeHash: true, reload:true});
     }
     else{
-		$("#muestramapa").on("pageshow", function(event, ui){radamap2(latitud, longitud, nombre, direc);});
-        $.mobile.changePage("../#muestramapa", { transition: "slideup", changeHash: true});
+        console.log("Entro al else");
+        $("#muestramapa").on("pageshow", function(event, ui){radamap2(latitud, longitud, nombre, direc);});
+        $.mobile.changePage("../index.html#muestramapa", { transition: "slideup", changeHash: true});
 		
         //$("#formularioBuscar").hide();
 		
@@ -36,9 +37,6 @@ function vermapa2(latitud, longitud, nombre, direc){
 		document.getElementById("mostrarMapa").innerHTML = "";
 		document.getElementById("mostrarMapa").style.backgroundColor = "transparent";
 		document.getElementById("despuesmap").innerHTML = "<hr>";*/		
-		
-		
-		
-		
+	
     }
 }
