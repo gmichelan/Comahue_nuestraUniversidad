@@ -2,6 +2,11 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
+.margen{
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+}
+
 .imagen{
     margin-left: 3px !important;
 }
@@ -81,6 +86,29 @@
     background-color: #0B610B !important;
     border-color: #000 !important;
    
+}
+#mostrarMapa{
+		width: 300px !important;
+		height: 233px !important;
+	}
+
+@media (min-width: 26em) {
+	#mostrarMapa{
+		width: 385px !important;
+		height: 300px !important;
+}
+	}
+@media (min-width: 30.75em) {
+	#mostrarMapa{
+		width: 450px !important;
+		height: 350px !important;
+	}
+}
+@media (min-width: 61.5em) {
+	#mostrarMapa{
+		width: 552px !important;
+		height: 430px !important;
+	}
 }
 
 .centerText{
@@ -313,6 +341,7 @@ border:1px solid #61cb6e; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 #footer{
     background-color:#0B0B61 !important;
 }
+
 /*body {
     -webkit-touch-callout: none;                 prevent callout to copy image, etc when tap to hold 
     -webkit-text-size-adjust: none;              prevent webkit from resizing text to fit 
