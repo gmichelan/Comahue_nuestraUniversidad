@@ -22,7 +22,8 @@
                     </div>
                     <div id="menu">
                         <!--a data-icon="grid" data-theme="a" data-role="button" href="#unidades">Unidades académicas</a-->
-                        <div class="separar-bot"><a data-role="button" class="boton botonRojo"  href="#buscar_carrera" >Buscar Carrera</a></div>
+                        <div class="separar-bot"><a data-role="button" class="boton botonRojo"  href="#buscar_carrera_grado" >Buscar Carrera</a></div>
+                        <div class="separar-bot"><a class="boton botonInscripcion" data-shadow="true"  href="#lista-posgrado" data-role="button">Carreras de posgrado</a></div>
                         <!--<div class="separar-bot"><a class="boton botonInscripcion" data-shadow="true"  href="#inscripciones" data-role="button">Inscripciones 2016</a></div>-->
                         <div class="separar-bot"><a class="boton botonAnaranjado" href="http://pedco.uncoma.edu.ar/"  data-role="button" >Plataforma de Educación a Distancia del Comahue</a></div>
                         <div class="separar-bot"><a class="boton botonInscripcion" data-shadow="true"  href="http://memoriacolectiva.uncoma.edu.ar/" data-role="button">Memoria Colectiva</a></div>
@@ -189,7 +190,7 @@
                     </div>
                 </div>
             </div>
-            <!--LISTAR CArRERAS-->
+            <!--LISTAR CARRERAS GRADOS-->
             <div id="buscar_carrera_nombre" data-role="page">
                 <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back"  data-role="button" data-icon="back" data-iconpos="notext"></a>
@@ -204,7 +205,6 @@
                     <div class="elements" data-filter="true" data-input="#divOfPs-input">    
                         <p><a href="planes/ca434.html">ABOGACÍA</a><br>- Facultad de Derecho y Ciencias Sociales<br> - Comunicación y Derecho<br> - General Roca<br> - 5 años</p>
 <hr/><p><a href="planes/ca303.html">CICLO GENERAL EN CIENCIAS ECONÓMICAS</a><br>- Facultad de Economía y Administración<br> - Ciencias Económicas / Administración<br> - Neuquén Capital<br><hr/><p><a href="planes/ca301.html">CONTADOR PÚBLICO NACIONAL</a><br>- Facultad de Economía y Administración<br> - Ciencias Económicas / Administración<br> - Neuquén Capital<br> - 5 años</p>
-<hr/><p><a href="planes/ca446.html">DOCTORADO EN ENSEñANZA DE CIENCIAS EXACTAS Y NATURALES</a><br>- Facultad de Ingeniería<br> - Humanidades / Ciencias Sociales<br> - Neuquén Capital<br> - 4 años</p>
 <hr/><p><a href="planes/ca279.html">GUÍA UNIVERSITARIO EN TURISMO</a><br>- Facultad de Turismo<br> - Turismo / Deporte<br> - Neuquén Capital<br> - San Martín de los Andes<br> - 2.5 años</p>
 <hr/><p><a href="planes/ca420.html">INGENIERIA AGRONOMICA</a><br>- Facultad de Ciencias Agrarias<br> - Ciencias Agrarias<br> - Cinco Saltos<br> - 5.5 años</p>
 <hr/><p><a href="planes/ca245.html">INGENIERÍA CIVIL</a><br>- Facultad de Ingeniería<br> - Ingeniería y Carreras Afines<br> - Neuquén Capital<br> - San Carlos de Bariloche<br> - Chos Malal<br> - 5 años</p>
@@ -287,6 +287,27 @@
                         <ul>
                             <li><!--a id="sponsor1" onclick="navigator.app.loadUrl('http://www.ypf.com', { openExternal:true });" ><img src="img/ypf.jpeg" id="ypf" class="sponsor" /></a--></li>
                             <li><a id="sponsor2" class="blue" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
+                            <li><!--a id="sponsor3" class="blue" href="#search-page" ></a--></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--LISTAR CARRERA POSTGRADO-->
+            <div  id="lista-posgrado" data-role="page">
+                <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
+                    <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext"></a>
+                    <div id="logoContainer" class="centerText">
+                        <img src="img/Isologotipo Comahue Nuestra Universidad.png" id="logo"  />
+                    </div>                     
+                </div>
+                <div data-role="content"  class="big-text">
+                    <p><a href="planes/ca446.html">DOCTORADO EN ENSEñANZA DE CIENCIAS EXACTAS Y NATURALES</a><br>- Facultad de Ingeniería<br> - Humanidades / Ciencias Sociales<br> - Neuquén Capital<br> - 4 años</p>
+<hr/>                </div>
+                <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
+                    <div id="navbar" data-role="navbar">
+                        <ul>
+                            <li><!--a id="sponsor1" onclick="navigator.app.loadUrl('http://www.ypf.com', { openExternal:true });" ><img src="img/ypf.jpeg" id="ypf" class="sponsor" /></a--></li>
+                            <li><a id="sponsor2" class="blue" onclick="navigator.app.loadUrl('http://www.bancocredicoop.coop/personas/promociones.html', {openExternal: true});"><img src="img/credicoop.jpeg" id="credicoop" class="sponsor" /></a></li>
                             <li><!--a id="sponsor3" class="blue" href="#search-page" ></a--></li>
                         </ul>
                     </div>
@@ -507,6 +528,7 @@
                     </div>
                 </div>
             </div>
+            <!--SECCIÓN MOSTRAR MAPA-->
             <div id="muestramapa" data-role="page">
                 <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back"  data-role="button" data-icon="back" data-iconpos="notext"></a>
@@ -551,7 +573,7 @@
                 </div>
                 <div data-role="content">
                     <div class="separar-bot"><a data-role="button" class="boton botonRojo"  href="#buscar_carrera_grado" >Carreras de grado</a></div>
-                    <div class="separar-bot"><a class="boton botonInscripcion" data-shadow="true"  href="#buscar_carrera_postgrado" data-role="button">Carreras de postgrado</a></div>
+                    <div class="separar-bot"><a class="boton botonInscripcion" data-shadow="true"  href="#lista-posgrado" data-role="button">Carreras de postgrado</a></div>
                 </div>
                 <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
                     <div id="navbar" data-role="navbar">
@@ -563,6 +585,7 @@
                     </div>
                 </div>
             </div>
+            <!--Buscar carrera postgrado quizas no deba usarlo-->
             <div id="buscar_carrera_postgrado" data-role="page">
                 <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
                     <a href="#" data-rel="back"  data-role="button" data-icon="back" data-iconpos="notext"></a>
