@@ -15,24 +15,14 @@
                div.addClass('margen');
                div.append(h3);
                
-               //var ul=$(document.createElement('ul'));
-               //ul.attr("data-role","listview");
-              // div.append(ul);
                $(item.noticias).each(function(index2, item2){
                    var p=$(document.createElement('p')).text(item2.titulo+'->'+item2.copete);
                    var a= $(document.createElement('a')).text('Ir a la fuente');
                    a.attr("href", item2.url);
                    p.append(a);
-                   div.append(p);
-                   
-                   
-//                   var li= $(document.createElement('li'));
-//                   li.addClass('custom-centercollheaderr3');
-//                   li.append(a);
-//                   ul.append(li);
+                   div.append(p);              
                });
- 
-               //div.enhanceWithin();
+
            });
        }
     });
