@@ -18,7 +18,7 @@
                $(item.noticias).each(function(index2, item2){
                    var p=$(document.createElement('p')).text(item2.titulo+'->'+item2.copete);
                    var a= $(document.createElement('a')).text('Ir a la fuente');
-                   a.attr("href", item2.url);
+                   a.attr("onclick", "navigator.app.loadUrl('"+ item2.url+"', {openExternal: true});");
                    p.append(a);
                    div.append(p);              
                });
