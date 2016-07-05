@@ -3,9 +3,11 @@
     $.mobile.changePage("#news");
     $.ajax({
        dataType:'json',
-       url: 'json.php',
-       success: function(response){ 
+       url: 'http://conu.fi.uncoma.edu.ar/rss_calendar_uncoma/json.php',
+       method: 'GET',
+       success: function(response){ console.log("exitoso");
            $(response.fuentes).each(function(index, item){
+               
                var div= $("<div data-role=\"collapsible\" data-inset=false>").appendTo('#novedadesId');
                var h3=$(document.createElement('h3')).text(item.nombre);
                h3.addClass('custom-centercollheader3');
