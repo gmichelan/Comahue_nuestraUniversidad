@@ -16,7 +16,7 @@
                div.append(h3);
                
                $(item.noticias).each(function(index2, item2){
-                   var p=$(document.createElement('p')).text(item2.titulo+'->'+item2.copete);
+                   var p=$(document.createElement('p')).text("<h4>"+item2.titulo+"</h4>"+'->'+item2.copete);
                    var a= $(document.createElement('a')).text('Ir a la fuente');
                    a.attr("onclick", "navigator.app.loadUrl('"+ item2.url+"', {openExternal: true});");
                    p.append(a);
