@@ -18,6 +18,9 @@
 .separar-top{
     padding-top: 10px !important;
 }
+.justificar{
+    text-align: justify !important;
+}
 
 .custom-centercollheaderr4 a {
     text-shadow: 3px 3px 2px #000 !important;
@@ -91,6 +94,7 @@
 		width: 300px !important;
 		height: 233px !important;
 	}
+
 
 @media (min-width: 26em) {
 	#mostrarMapa{
