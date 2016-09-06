@@ -168,6 +168,25 @@ h1, h3{
     color: #FFFFFF !important;
 }
 
+.botonRosado{
+border:1px solid #f1007c; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+ background-color: #FF2A98; background-image: -webkit-gradient(linear, left top, left bottom, from(#FF2A98), to(#BC0062));
+ background-image: -webkit-linear-gradient(top, #FF2A98, #BC0062);
+ background-image: -moz-linear-gradient(top, #FF2A98, #BC0062);
+ background-image: -ms-linear-gradient(top, #FF2A98, #BC0062);
+ background-image: -o-linear-gradient(top, #FF2A98, #BC0062);
+ background-image: linear-gradient(to bottom, #FF2A98, #BC0062);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FF2A98, endColorstr=#BC0062);
+}
+
+.botonRosado:hover{
+ border:1px solid #c30065;
+ background-color: #D62380; background-image: -webkit-gradient(linear, left top, left bottom, from(#D62380), to(#94004D));
+ background-image: -webkit-linear-gradient(top, #D62380, #94004D);
+ background-image: -moz-linear-gradient(top, #D62380, #94004D);
+ background-image: -ms-linear-gradient(top, #D62380, #94004D);
+ background-image: -o-linear-gradient(top, #D62380, #94004D);
+ background-image: linear-gradient(to bottom, #D62380, #94004D);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#D62380, endColorstr=#94004D);
+}
 
 .botonInscripcion{
  border:1px solid #72021c; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF !important;
@@ -274,6 +293,7 @@ border:1px solid #d4cd00; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
  background-image: -o-linear-gradient(top, #d9d200, #8C8306);
  background-image: linear-gradient(to bottom, #d9d200, #8C8306);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#d9d200, endColorstr=#8C8306);
 }
+
 
 .botonVerde{
 border:1px solid #34740e; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;

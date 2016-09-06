@@ -3,8 +3,8 @@ function mostrarNovedades(){
     console.log("ENTRO");
     $.ajax({
         dataType:'json',
-        url: 'http://conu.fi.uncoma.edu.ar/rss_calendar_uncoma/json.php',
-        //url:'json.php',
+        //url: 'http://conu.fi.uncoma.edu.ar/rss_calendar_uncoma/json.php',
+        url:'json.php',
         success: function(response){ console.log("exitoso");
            $(response.noticias).each(function(index, item){
             //var separator=$(document.createElement('p')).text("----------------------------------------------------------------");
