@@ -13,18 +13,25 @@
 //        }                        
 //        });
 
-function boton(valor){
-    if(valor=="normal"){
-        $("#divOfPs-input").val(""); 
-        
-        $("#formularioBuscar").show();     
-        $.mobile.changePage("#buscar_carrera_nombre", { transition: "slideup", changeHash: true, reload:true});
-        location.reload();
+function boton(valor,numero){
+    if(numero == 0){
+        if(valor=="normal"){
+            $("#divOfPs-input").val(""); 
+            $("#formularioBuscar").show();     
+            $.mobile.changePage("#buscar_carrera_nombre", { transition: "slideup", changeHash: true, reload:true});
+            location.reload();
+        }
+        else{
+            $.mobile.changePage("#buscar_carrera_nombre", { transition: "slideup", changeHash: true});
+            $("#formularioBuscar").hide();
+            $("#divOfPs-input").val(valor); 
+            $("#divOfPs-input").change();   
+        }
     }
     else{
-        $.mobile.changePage("#buscar_carrera_nombre", { transition: "slideup", changeHash: true});
-        $("#formularioBuscar").hide();
-        $("#divOfPs-input").val(valor); 
-        $("#divOfPs-input").change();   
+        $.mobile.changePage("#lista_posgrado", { transition: "slideup", changeHash: true});
+        $("#formularioBuscar2").hide();
+        $("#entrada").val(valor); 
+        $("#entrada").change();
     }
 }
