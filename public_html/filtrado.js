@@ -25,13 +25,15 @@ function boton(valor,numero){
             $.mobile.changePage("#buscar_carrera_nombre", { transition: "slideup", changeHash: true});
             $("#formularioBuscar").hide();
             $("#divOfPs-input").val(valor); 
-            $("#divOfPs-input").change();   
+            $("#divOfPs-input").change();
+            
         }
     }
-    else{
-        $.mobile.changePage("#lista_posgrado", { transition: "slideup", changeHash: true});
-        $("#formularioBuscar2").hide();
-        $("#entrada").val(valor); 
-        $("#entrada").change();
-    }
+}
+
+function boton2(valor, numero){
+    $.mobile.changePage("#lista_posgrado", { transition: "slideup", changeHash: true});
+    $("#formularioBuscar2").hide();
+    $("#entrada").val(valor); 
+    $("#entrada").change();
 }
