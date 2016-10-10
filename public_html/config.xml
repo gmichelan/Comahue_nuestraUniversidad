@@ -2,7 +2,7 @@
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        xmlns:gap = "http://phonegap.com/ns/1.0"
+        xmlns:gap = "http://phonegap.com/ns/2.0"
         id        = "com.phonegap.comahuenuestrauniversidad"
         version   = "1.9.0">
 
