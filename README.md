@@ -1,0 +1,2 @@
+Este repositorio fue creado por alumnos pertenecientes al grupo Euclides de la Facultad de Informática perteneciente a la Universidad Nacional del Comahue, con el objetivo de albergar y compartir al público el codigo fuente de su aplicación llamada Comahue Nuestra Universidad. Sean bienvenidos a probar, comentar y mejorar el código.
+La aplicación esta creada con html a través de PHP. Luego es convertida a formato .apk gracias a la ayuda de adobe phonegap.
