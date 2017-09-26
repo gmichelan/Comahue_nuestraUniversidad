@@ -65,8 +65,8 @@
 <!--    <gap:plugin name="org.apache.cordova.media" />-->
 <!--    <gap:plugin name="org.apache.cordova.network-information" />-->
 <!--    <gap:plugin name="org.apache.cordova.splashscreen" />-->
-    <gap:plugin name="org.apache.cordova.vibration" />
-    <gap:plugin name="com.indigoway.cordova.whitelist.whitelistplugin"/>
+    <gap:plugin name="org.apache.cordova.vibration" source="npm"/>
+    <gap:plugin name="com.indigoway.cordova.whitelist.whitelistplugin" source="npm"/>
     
 <!--    <Permitir navegaciones>-->
     <allow-navigation href="*" />
