@@ -60,7 +60,7 @@
 <!--    <gap:plugin name="org.apache.cordova.contacts" />-->
 <!--    <gap:plugin name="org.apache.cordova.device" />-->
 <!--    <gap:plugin name="org.apache.cordova.device-motion" />-->
-<!--        <gap:plugin name="cordova-plugin-device-orientation" spec="2.0.0" />-->
+<!--    <gap:plugin name="cordova-plugin-device-orientation" spec="2.0.0" />-->
 <!--    <gap:plugin name="org.apache.cordova.device-orientation" source="npm" />este -->
     <!--<gap:plugin name="com.phonegap.plugins.pushplugin" spec="2.5.0" source="pgb" />-->
 <!--    <gap:plugin name="org.apache.cordova.dialogs" />-->
