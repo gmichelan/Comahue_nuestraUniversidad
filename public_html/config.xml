@@ -104,7 +104,7 @@
     <splash src="img/splash/splash-android/xhdpi.png" platform="android" qualifier="xhdpi" />
 <!--    <splash src="img/splash/splash-android/fr-xhdpi.png" platform="android" qualifier="fr-xhdpi" />-->
     <splash src="img/splash/splash-android/xxhdpi.png" platform="android" qualifier="port-xxhdpi" />
-    <splash src="img/splash/splash-android/landscape-xxhdpi.png" platform="android" qualifier="land-xxhdpi" />
+<!--    <splash src="img/splash/splash-android/landscape-xxhdpi.png" platform="android" qualifier="land-xxhdpi" />-->
 
 
 
