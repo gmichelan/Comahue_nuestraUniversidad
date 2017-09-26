@@ -54,19 +54,19 @@
 <!--    <gap:plugin name="org.apache.cordova.contacts" />-->
 <!--    <gap:plugin name="org.apache.cordova.device" />-->
 <!--    <gap:plugin name="org.apache.cordova.device-motion" />-->
-<!--    <gap:plugin name="org.apache.cordova.device-orientation" source="npm" />-->
+<!--    <gap:plugin name="org.apache.cordova.device-orientation" source="npm" />este -->
     <!--<gap:plugin name="com.phonegap.plugins.pushplugin" spec="2.5.0" source="pgb" />-->
 <!--    <gap:plugin name="org.apache.cordova.dialogs" />-->
 <!--    <gap:plugin name="org.apache.cordova.file" />-->
 <!--    <gap:plugin name="org.apache.cordova.file-transfer" />-->
 <!--    <gap:plugin name="org.apache.cordova.geolocation" />-->
 <!--    <gap:plugin name="org.apache.cordova.globalization" />-->
-    <gap:plugin name="org.apache.cordova.inappbrowser" source="npm"/>
+    <gap:plugin name="org.apache.cordova.inappbrowser"></gap:plugin>
 <!--    <gap:plugin name="org.apache.cordova.media" />-->
 <!--    <gap:plugin name="org.apache.cordova.network-information" />-->
-    <gap:plugin name="org.apache.cordova.splashscreen" source="npm"/>
-    <gap:plugin name="org.apache.cordova.vibration" source="npm"/>
-    <gap:plugin name="com.indigoway.cordova.whitelist.whitelistplugin" source="npm"/>
+    <gap:plugin name="org.apache.cordova.splashscreen"></gap:plugin>
+    <gap:plugin name="org.apache.cordova.vibration"></gap:plugin>
+    <gap:plugin name="com.indigoway.cordova.whitelist.whitelistplugin"></gap:plugin>
     
 <!--    <Permitir navegaciones>-->
     <allow-navigation href="*" />
