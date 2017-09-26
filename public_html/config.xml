@@ -48,7 +48,12 @@
 
     <!-- Core plugins -->
     <plugin name="cordova-plugin-inappbrowser" spec="~1.7.1" />
-<!--    <gap:plugin name="org.apache.cordova.battery-status" />-->
+    <plugin name="cordova-plugin-device-orientation" spec="~2.0.0" />
+    <plugin name="cordova-plugin-geolocation" spec="~2.4.3" />
+    <plugin name="cordova-plugin-globalization" spec="~1.0.7" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.7.1" />
+    
+    <!--    <gap:plugin name="org.apache.cordova.battery-status" />-->
 <!--    <gap:plugin name="org.apache.cordova.camera" />-->
 <!--    <gap:plugin name="org.apache.cordova.media-capture" />-->
 <!--    <gap:plugin name="org.apache.cordova.console" />-->
